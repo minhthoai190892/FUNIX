@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  background-color: #be3144;
+}
+header ul {
+  display: flex;
+  /* text-decoration: none; */
+  list-style-type: none;
+  gap: 30px;
+  padding-right: 20px;
+}
+header ul .nav-bar-link {
+  padding: 20px;
+  color: white;
+}
+header .nav-bar-link:hover {
+  background-color: #45567d;
+}
+/* <!-- introduction --> */
+
+.introduction {
+  background-color: #000;
+  height: 600px;
+  text-align: center;
+  padding-top: 290px;
+}
+.introduction h1 {
+  color: white;
+  font-size: 50px;
+}
+.introduction p {
+  color: #be3144;
+  font-size: 30px;
+}
+.container {
+  background-color: #45567d;
+  text-align: center;
+
+  padding: 30px;
+}
+.container a {
+  padding-bottom: 10px;
+  /* border-bottom: 1px solid white; */
+  color: white;
+}
+.container h1 {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+/* content */
+.grid {
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  gap: 20px;
+}
+img {
+  width: 400px;
+}
+
+figcaption {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 20px;
+}
+figcaption a {
+  border-bottom: none;
+  text-decoration: none;
+}
+button {
+  padding: 20px;
+  margin-top: 40px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  background-color: #be3144;
+}
+.link {
+  text-align: center;
+  color: white;
+  background-color: rgb(102, 98, 98);
+}
+.link h1 {
+  padding-top: 200px;
+  font-size: 50px;
+}
+.link ul {
+  padding-top: 50px;
+  padding-left: 25%;
+  padding-bottom: 150px;
+  border-bottom: 3px solid red;
+  font-size: 30px;
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+.link-link {
+  list-style-type: none;
+}
+.link .link-link:hover {
+  transform: translateY(15px);
+}
+/* footer */
+footer{
+    background-color:rgb(102, 98, 98) ;
+    padding: 20px 120px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+@media (max-width:500px){
+  .container .grid{
+    display: flex;
+    flex-direction: column;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .link {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .link ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    border: 1px solid red;
+    padding-right: 200px;
+  }
+
+}

@@ -1,0 +1,88 @@
+.div-block {
+  color: aqua;
+  display: block;
+  border: 2px solid aqua;
+  width: 1000px;
+  height: 200px;
+}
+.inline {
+  color: red;
+  display: inline;
+  border: 2px solid red;
+
+  height: 200px;
+}
+.div-inline-block {
+  color: blue;
+  display: inline-block;
+  border: 2px solid blue;
+  width: 1000px;
+  height: 200px;
+  margin-left: 100px;
+}
+.position-static {
+    border: 2px solid aqua;
+    color: red;
+    margin-bottom: 20px;
+    position: static;
+    left: 20px;
+    /* vị trí mặc định */
+}
+.position-relative {
+    border: 2px solid aqua;
+    margin-bottom: 20px;
+    left: 20px;
+    position: relative;
+    /* phạm vi trong div */
+}
+.position-fixed {
+    border: 2px solid aqua;
+    margin-bottom: 20px;
+    left: 300px;
+    top: 300px;
+    position: fixed;
+    /* phạm vi trong nội dung
+        nội dung đè lên hàng trên
+        cố định trên trang
+    */
+}
+.position-absolute {
+    border: 2px solid aqua;
+    margin-bottom: 20px;
+    color: red;
+    position: absolute;
+    /* left: 400px;
+    top: 400px; */
+    /* phạm vi trong nội dung
+        nội dung đè lên hàng trên
+    */
+}
+.position-sticky {
+    border: 2px solid aqua;
+    margin-bottom: 20px;
+ 
+    position: sticky;
+}
+.pseudo-element::first-line{
+    color: blue;
+}
+h1{
+    border: 2px solid green;
+    background-color: darkgrey;
+    position: relative;
+}
+h1::first-line{
+    color: red;
+}
+h1::after{
+    content: "Top";
+    color: white;
+    background-color: aqua;
+    font-size: 10px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top:   0px;
+    right: 0px;
+}

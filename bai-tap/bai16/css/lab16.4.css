@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 300px auto;
+    /* grid-template-rows: 500px auto; */
+}
+h1{
+    position: fixed;
+    
+}
+.title{
+    overflow: scroll;
+    position: fixed;
+    /* overflow-y: auto; */
+    height:  650px;
+    margin-top: 40px;
+}
+.title li{
+    border: 1px solid gray;
+    padding: 20px 20px;
+}
+.title a{
+    text-decoration: none;
+    color: black;
+    padding: 0px 20px;
+    /* font-size: 30px; */
+}
+.content{
+    margin-top: 20px;
+    padding: 0px 20px;
+    line-height:2;
+}
+.content-item p{
+    padding-bottom: 10px;
+
+}
+.content-item p{
+    padding-left: 20px;
+}
+.content-item ul{
+    padding-left: 80px;
+}
+
+.ghichu{
+    background-color: rgb(212, 209, 209);
+    margin-left: 30px;
+}
+.ghichu pre{
+    padding: 10px;
+}

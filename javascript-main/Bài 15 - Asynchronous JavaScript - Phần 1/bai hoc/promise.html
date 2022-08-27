@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ví dụ Promise</h1>
+    <script>
+      const soDoan = Number(prompt("Nhập số bạn đoán: "));
+      const ketQua = 123456;
+      const myPromise = new Promise(function ExcutorFunc(thanhCong, thatBai) {
+        if (soDoan === ketQua) {
+          const dataThanhCong = "Bạn đã đoán trúng";
+          thanhCong(dataThanhCong);
+        } else {
+          const dataThatBai = "Bạn đã đoán sai";
+          thatBai(dataThatBai);
+        }
+      }); // => trả về 1 promise
+
+      //gọi phương thức "then" để sử lý từng trạng thái của promise
+      myPromise
+        .then(function thanhCong(dataThanhCong) {
+          console.log(dataThanhCong);
+        })
+        //bắt lỗi
+        .catch(function thatBai(dataThatBai) {
+          console.log(dataThatBai);
+        })
+        //thực thi
+        .finally(() => console.log("DONE!")); //=> trả về 1 cái promise
+      console.log(myPromise);
+    </script>
+  </body>
+</html>

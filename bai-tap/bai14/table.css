@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto";
+    color: #344a40;
+    border-bottom: 8px solid #087f5b;
+    display: flex;
+    justify-content: center;
+}
+table{
+    width: 800px;
+    margin-top: 100px;
+    border-collapse: collapse;
+    /* border: 1px solid red; */
+}
+th,td{
+    /* border: 1px solid red; */
+padding: 16px 24px;
+text-align: left;
+}
+thead th{ /* <th> là con của <thead>*/
+    background-color: #087f5b;
+    color: white;
+    width: 25%;
+}
+tbody tr:nth-child(odd){
+    background-color: lightgray;
+}
+tbody tr:nth-child(even){
+    background-color: lightblue;
+}

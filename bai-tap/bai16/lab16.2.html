@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/lab16.2.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1 >freeCodeCamp Survey Form</h1>
+      <p class="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+
+      <div class="main-content">
+        <div id="form-content">
+          <form action="" id="survey-form">
+            <label for="name" id="label-name">Name</label>
+            <input id="name" required type="text" placeholder="Enter Name" />
+            <label for="email" id="label-email">Email</label>
+            <input id="email" required type="text" placeholder="Enter email" />
+            <label for="number" id="label-age">Age</label>
+            <input
+              id="number"
+              required
+              type="number"
+              min="1"
+              max="20"
+            
+              placeholder="Enter Age"
+            />
+            <!-- dropdow -->
+            <label for="dropdown" id=""
+              >Which option best describes your current role?</label
+            >
+            <select id="dropdown">
+              <option value="student">student</option>
+              <option value="Full Time Jog">Full Time Jog</option>
+              <option value="Full Time learner">Full Time learner</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+              <option value="Other">Other</option>
+            </select>
+            <!-- radio -->
+            <fieldset>
+              <legend>Would you recommend freeCodeCamp to a friend?</legend>
+              <input
+                type="radio"
+                name="action"
+                checked
+                id="definitely"
+                value="definitely"
+              />
+              <label for="definitely">definitely</label>
+              <br />
+              <input type="radio" name="action" id="baybe" value="baybe" />
+              <label for="baybe">Maybe</label>
+              <br />
+              <input
+                type="radio"
+                name="action"
+                id="not sure"
+                value="not sure"
+              />
+              <label for="not sure">Not sure</label>
+            </fieldset>
+            <!-- dropdow -->
+            <label for="dropdown" id=""
+              >What is your favorite feature of freeCodeCamp?</label
+            >
+            <select id="dropdown">
+              <option value="Select an option">Select an option</option>
+              <option value="Challenges">Challenges</option>
+              <option value="Projects">Projects</option>
+              <option value="Community">Community</option>
+              <option value="Open source">Open source</option>
+            </select>
+            <!-- check-box -->
+            <fieldset>
+              <legend>Would you recommend freeCodeCamp to a friend?</legend>
+              <input
+                type="checkbox"
+                name="action"
+                checked
+                id="front-end"
+                value="front-end"
+              />
+              <label for="front-end">Front-end Projects</label>
+              <br />
+              <input
+                type="checkbox"
+                name="action"
+                id="back-end"
+                value="back-end"
+              />
+              <label for="back-end">Back-end Projects</label>
+              <br />
+              <input
+                type="checkbox"
+                name="action"
+                id="data-visualization"
+                value="data-visualization"
+              />
+              <label for="data-visualization">Data Visualization</label>
+              <br />
+
+              <input
+                type="checkbox"
+                name="action"
+                id="challenges"
+                value="challenges"
+              />
+              <label for="challenges">Challenges</label>
+              <br />
+              <input
+                type="checkbox"
+                name="action"
+                id="open-source-community"
+                value="open-source-community"
+              />
+              <label for="open-source-community">Open Source Community</label>
+              <br />
+              <input
+                type="checkbox"
+                name="action"
+                id="gitter-help-rooms"
+                value="gitter-help-rooms"
+              />
+              <label for="gitter-help-rooms">Gitter help rooms</label>
+              <br />
+              <input type="checkbox" name="action" id="video" value="video" />
+
+              <label for="video">Video</label>
+              <br />
+              <input
+                type="checkbox"
+                name="action"
+                id="city-meetups"
+                value="city-meetups"
+              />
+              <label for="city-meetups">City Meetups</label>
+
+              <br />
+              <input type="checkbox" name="action" id="wiki" value="Wiki" />
+              <label for="wiki">Wiki</label>
+              <br />
+              <input type="checkbox" name="action" id="forum" value="forum" />
+              <label for="forum">Forum</label>
+              <br />
+              <input
+                type="checkbox"
+                name="action"
+                id="additional-courses"
+                value="additional-courses"
+              />
+              <label for="additional-courses">Additional Courses</label>
+            </fieldset>
+            <!-- comment -->
+            <label for="comment">Any comments or suggestions?</label>
+            <textarea rows="4" cols="50" name="" id="comment">
+Enter your commend here</textarea
+            >
+            <button type="submit" id="submit">Submit</button>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,18 @@
+h1{
+    color: blue;
+    font-size: 26px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+}
+p{
+    font-size: 20;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+}
+li{
+    font-size: 18;
+    color: aqua;
+    
+}

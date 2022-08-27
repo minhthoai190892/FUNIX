@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 7.5</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        line-height: 1.4;
+      }
+      .product {
+        border: 4px solid black;
+        width: 825px;
+        margin: 50px auto;
+        position: relative;
+      }
+      .productTitle {
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: #f7f7f7;
+        padding: 15px;
+      }
+      .price {
+        font-size: 24px;
+        float: left;
+        padding-right: 70px;
+      }
+      .freeShip {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #777;
+        margin-bottom: 20px;
+      }
+      .more-info:link,
+      .more-info:visited {
+        color: black;
+      }
+      .more-info:hover,
+      .more-info:active {
+        text-decoration: none;
+      }
+      .product-detail {
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+      }
+      .product-list {
+        list-style: square;
+        margin-left: 20px;
+      }
+      .product-list li {
+        margin-bottom: 10px;
+      }
+      .add-card {
+        background-color: #000;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 15px;
+        width: 100%;
+        border-top: 4px solid #000;
+      }
+      .add-card:hover {
+        color: #000;
+        background-color: #fff;
+      }
+      .sale {
+        color: white;
+        background-color: red;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        display: inline-block;
+        position: absolute;
+        top: -20px;
+        left: -38px;
+        padding: 7px 15px;
+      }
+      .color {
+        background-color: #000;
+        height: 22px;
+        width: 22px;
+        display: flex;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .color-blue {
+        background-color: blue;
+      }
+      .color-red {
+        background-color: red;
+      }
+      .color-yellow {
+        background-color: yellow;
+      }
+      .color-green {
+        background-color: green;
+      }
+      .color-brown {
+        background-color: brown;
+      }
+      .product-img {
+        margin-right: 40px;
+        float: left;
+      }
+      .product-info {
+        width: 243px;
+        float: left;
+        margin-right: 40px;
+        /* margin-top: 5px; */
+      }
+    </style>
+  </head>
+  <body>
+    <article class="product">
+      <h2 class="productTitle">Converse Chuck Taylor AllStar Low Top</h2>
+      <div class="container">
+        <div class="product-img">
+          <img
+            src="images/android.jpg"
+            alt="Chuck Taylor All Star Shoe"
+            width="250"
+            height="250"
+          />
+        </div>
+        <div class="product-info">
+          <p class="price"><b>$65.00</b></p>
+          <p class="freeShip">Free Shipping</p>
+          <p class="sale">Sale</p>
+          <p>
+            Ready to dress up or down, these classic canvas Chucks are an
+            everyday wardrobe staple.
+          </p>
+          <a class="more-info" href="https://www.converse.com"
+            >More information &rarr;</a
+          >
+          <div class="colors">
+            <div class="color"></div>
+            <div class="color color-blue"></div>
+            <div class="color color-red"></div>
+            <div class="color color-yellow"></div>
+            <div class="color color-green"></div>
+            <div class="color color-brown"></div>
+          </div>
+        </div>
+        <div class="product-details">
+          <h3 class="product-detail">Product details</h3>
+          <ul class="product-list">
+            <li>lightweight, durable canvas sneaker</li>
+            <li>Lightly padded footbed for added comfort</li>
+            <li>Iconic Chuck Taylor ankle patch</li>
+          </ul>
+        </div>
+        
+      <button class="add-card" type="submit">Add to cart</button>
+    </article>
+  </body>
+</html>

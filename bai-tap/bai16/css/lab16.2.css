@@ -1,0 +1,97 @@
+.main {
+  /* background-image: url("https://images.unsplash.com/photo-1656348281437-ebd2b19aab4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fFM0TUtMQXNCQjc0fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"); */
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url("https://images.unsplash.com/photo-1580854256166-e01d8a34da4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfHhqUFI0aGxrQkdBfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  
+  left: 0;
+  padding: 0;
+  overflow-y: scroll;
+  font-size: 24px;
+  width: 100%;
+
+}
+.main::after {
+  content: "";
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+}
+.main h1,
+.main p {
+  text-align: center;
+  font-family: 35px;
+  z-index: 2;
+  position: relative;
+  color: aqua;
+}
+.main-content {
+  background-color: rgb(27, 27, 50);
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  z-index: 2;
+  position: relative;
+
+  box-shadow: 0px -1px 10px 5px purple;
+}
+#name,
+#email,
+#number,
+#dropdown,
+#comment {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 5px 10px;
+  color: #000000;
+  background-color: #fff;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+label[for="name"],
+label[for="email"],
+label[for="number"],
+label[for="dropdown"],
+label[for="comment"] {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#comment{
+    min-height: 180px;
+}
+label[for="comment"]{
+    margin-top: 30px;
+}
+#submit{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: green;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+}
+.block{
+  display: block;
+  background-color: yellow;
+}

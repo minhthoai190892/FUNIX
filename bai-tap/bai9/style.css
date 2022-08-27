@@ -1,0 +1,115 @@
+.color {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  display: flex;
+}
+.color-blue {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 1;
+}
+#div1 {
+  flex-shrink: 1;
+}
+#div2 {
+  flex-shrink: 2;
+}
+.color-red {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 2;
+}
+.color-yellow {
+  background-color: yellow;
+}
+.color-aqua {
+  background-color: aqua;
+}
+.container {
+  border: 2px solid pink;
+  display: f;
+  justify-content: center;
+}
+.flex-container {
+  border: 2px solid pink;
+
+  background-color: white;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+}
+.div1 {
+  background-color: dodgerblue;
+  width: 25%;
+  height: 50%;
+}
+.div2 {
+  background-color: blue;
+  width: 25%;
+  height: 50%;
+}
+.div3 {
+  background-color: black;
+  width: 25%;
+  height: 50%;
+}
+.div4 {
+  background-color: red;
+  width: 25%;
+  height: 50%;
+}
+.div5 {
+  background-color: yellow;
+  width: 25%;
+  height: 50%;
+}
+.div6 {
+  background-color: pink;
+  width: 25%;
+  height: 50%;
+}
+.div7 {
+  background-color: aqua;
+  width: 25%;
+  height: 50%;
+}
+.div8 {
+  background-color: darkred;
+  width: 25%;
+  height: 50%;
+}
+header {
+  border: 2px solid pink;
+  display: flex;
+  flex-direction: row;
+}
+.follow-btn {
+  display: flex;
+  align-items: flex-end;
+  width: 100px;
+  height: 100px;
+}
+#box-container {
+  display: flex;
+  height: 500px;
+}
+#box-1 {
+  background-color: dodgerblue;
+  width: 100%;
+  height: 200px;
+  flex-shrink: 1;
+}
+
+#box-2 {
+  background-color: orangered;
+  width: 100%;
+  height: 200px;
+  flex-shrink: 2;
+  flex: 2 2 15px;
+}

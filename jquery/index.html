@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Test Jquery</h1>
+    <div class="container">
+      <h1>Test 6: jquery DOM Manipulation</h1>
+      <h2>Click on the button present below</h2>
+      <span id="span6-1"></span>
+      <div class="div6-1" style="background-color: aqua">
+        <p class="p6-1">This is <i> box 1</i></p>
+      </div>
+      <button class="" id="btn6-1">Click me</button>
+    </div>
+    <div class="container">
+      <h1>Test 5: Animate</h1>
+      <img
+        src="https://images.unsplash.com/photo-1657211548377-67c51948661f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eGpQUjRobGtCR0F8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+        alt=""
+        id="img5"
+      />
+      <br />
+      <button id="btn5-1">Animate</button>
+    </div>
+    <div class="container">
+      <h1>Test 4: Sự kiện Hide Show Toggle</h1>
+      <img
+        src="https://images.unsplash.com/photo-1657211548377-67c51948661f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eGpQUjRobGtCR0F8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+        alt=""
+        id="img4"
+      />
+      <br />
+      <button id="btn4-1">Hide</button>
+      <button id="btn4-2">Show</button>
+      <button id="btn4-3">Toggle</button>
+      <hr />
+      <button id="btn4-4">Fade-in</button>
+      <button id="btn4-5">Fade-out</button>
+      <button id="btn4-6">Fade-Toggle</button>
+      <hr />
+      <button id="btn4-7">Slide Up</button>
+      <button id="btn4-8">Slide Down</button>
+      <button id="btn4-9">Slide-Toggle</button>
+      <button id="btn4-10">Stop</button>
+    </div>
+
+    <div class="container">
+      <h1>Test 3: Sự kiện Chuột</h1>
+      <img
+        src="https://images.unsplash.com/photo-1657211548377-67c51948661f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eGpQUjRobGtCR0F8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+        alt=""
+        id="img3"
+      />
+      <br />
+      <button id="btn3">Click me</button>
+    </div>
+    <hr />
+
+    <div class="container">
+      <h1>Test 1</h1>
+
+      <img
+        src="https://images.unsplash.com/photo-1657211548377-67c51948661f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eGpQUjRobGtCR0F8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+        alt=""
+        id="img1"
+      />
+      <br />
+      <button onclick="func1()">FADE</button>
+    </div>
+    <hr />
+    <div class="container">
+      <h1>test 2</h1>
+      <p>outside 1</p>
+      <p>outside 2</p>
+      <p>outside 3</p>
+      <div id="div1">
+        <p id="p1">div 1</p>
+        <p class="p2">div 2</p>
+      </div>
+
+      <div id="div2">
+        <p id="p1">div 3</p>
+        <p class="p2">div 4</p>
+      </div>
+      <div id="div2_3">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </div>
+      <button onclick="func2()">Click me</button>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+
+    <!-- <script src="jqurey.js" type="tex"></script> -->
+    <script src="jqurey.js"></script>
+  </body>
+</html>

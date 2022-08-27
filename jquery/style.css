@@ -1,0 +1,61 @@
+.container{
+  border: 3px dotted red;
+
+}
+img{
+  height: 100px;
+  width: 100px;
+  /* position: absolute; */
+  left:   300px;
+}
+#div1{
+  margin: auto;
+  text-align: center;
+  border: 3px dotted red;
+  font-size: 30px;
+  position: relative;
+  background-color: cadetblue;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+#div2{
+  
+  margin: auto;
+  text-align: center;
+  border: 3px dotted red;
+  font-size: 30px;
+  position: relative;
+  background-color: yellow;
+  height: 300px;
+  width: 300px;
+
+}
+#div2_3{
+  
+  margin: auto;
+  text-align: center;
+  border: 3px dotted red;
+  font-size: 30px;
+  position: relative;
+  background-color: gray;
+  height: 300px;
+  width: 300px;
+
+}
+
+.div6-1{
+  height: 250px;
+  width: 250px;
+  border: 5px solid black;
+  margin: 50px;
+  font-size: xx-large;
+  font-weight: bolder;
+  
+}
+.p6-1{
+  text-align: center;
+  margin-top: 100px;
+
+}

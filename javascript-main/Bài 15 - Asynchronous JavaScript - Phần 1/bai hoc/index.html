@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>bai 15</h1>
+    <p></p>
+    <script>
+        console.log("1");
+        console.log("2");
+        console.log("3");
+        setTimeout(function () {
+            console.log("4");
+        }, 5000)
+        console.log("hoan thanh");
+        const arr = [1, 2, 3, 4, 5, 2]
+        const arr2 = arr.reduce((pre, cur) => pre + cur)
+        const arr3 = arr.filter(item => item % 2 === 0).reduce((pre, cur) => pre * cur)
+        console.log(arr2);
+        console.log(arr3);
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>

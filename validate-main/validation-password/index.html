@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>validation password</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* border: 1px solid red; */
+            background-color: aqua;
+        }
+
+        .box {
+            position: relative;
+            /* border: 1px solid red; */
+            width: 300px;
+        }
+
+        .box .inputBox {
+            position: relative;
+            width: 100%;
+            background-color: #fff;
+
+            padding: 5px;
+            border-radius: 8px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .box .inputBox input {
+            position: relative;
+            width: 100%;
+            outline: none;
+            border: none;
+            padding: 10px 5px;
+            /* background-color: red; */
+        }
+
+        .box .inputBox #toggleBtn {
+            background-color: rgba(0, 0, 0, 0.05);
+            position: absolute;
+            top: 7px;
+            right: 10px;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box .inputBox #toggleBtn::before {
+            content: "\f06e";
+            font-family: fontAwesome;
+        }
+
+        .box .inputBox #toggleBtn.hide::before {
+            content: "\f070";
+            font-family: fontAwesome;
+        }
+        .validation{
+            background: #376488;
+            padding: 10px;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+        }
+        .validation ul{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .validation ul li{
+            position: relative;
+            list-style: none;
+            color: #fff;
+            font-size: 0.85em;
+            transition: 0.5s;
+        }
+        .validation ul li.valid{
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .validation ul li.valid::before{
+            content: "\f00c";
+            color: #0f0;
+        }
+
+        .validation ul li::before{
+            content: "\f192";
+            width: 20px;
+            height: 10px;
+            font-family: fontAwesome;
+            display: inline-block;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="inputBox">
+            <input type="password" id="pswrd" placeholder="Password" onkeyup="checkPassword(this.value)">
+            <span id="toggleBtn"></span>
+        </div>
+        <div class="validation">
+            <ul>
+                <li id="lower">At least one lowercase character</li>
+                <li id="upper">At least one uppercase character</li>
+                <li id="number">At least one number</li>
+                <li id="special">At least one special character</li>
+                <li id="length">At least 8 character</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        let pswrd = document.getElementById("pswrd")
+        let toggleBtn = document.getElementById("toggleBtn")
+        let lowerCase = document.getElementById("lower")
+        let upperCase = document.getElementById("upper")
+        let digit = document.getElementById("number")
+        let specialChar = document.getElementById("special")
+        let minLength = document.getElementById("length")
+        //show hide password
+        function checkPassword(data) {
+            //javascript regular expression patten
+            const lower = new RegExp('(?=.*[a-z])')
+            const upper = new RegExp('(?=.*[A-Z])')
+            const number = new RegExp('(?=.*[0-9])')
+            const special = new RegExp('(?=.*[!@#\$%\^&\*])')
+            const length = new RegExp('(?=.{8,})')
+            // lower case validation check
+            if (lower.test(data)) {
+                lowerCase.classList.add("valid")
+            }else{
+                lowerCase.classList.remove("valid")
+
+            }
+            // upper case validation check
+            if (upper.test(data)) {
+                upperCase.classList.add("valid")
+            }else{
+                upperCase.classList.remove("valid")
+
+            }
+            // number case validation check
+            if (number.test(data)) {
+                digit.classList.add("valid")
+            }else{
+                digit.classList.remove("valid")
+
+            }
+            // special case validation check
+            if (special.test(data)) {
+                specialChar.classList.add("valid")
+            }else{
+                specialChar.classList.remove("valid")
+
+            }
+            // length case validation check
+            if (length.test(data)) {
+                minLength.classList.add("valid")
+            }else{
+                minLength.classList.remove("valid")
+
+            }
+            
+        }
+        toggleBtn.onclick = function () {
+
+            if (pswrd.type === "password") {
+                pswrd.setAttribute("type", "text")
+                toggleBtn.classList.add('hide')
+            } else {
+                pswrd.setAttribute("type", "password")
+                toggleBtn.classList.remove('hide')
+
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

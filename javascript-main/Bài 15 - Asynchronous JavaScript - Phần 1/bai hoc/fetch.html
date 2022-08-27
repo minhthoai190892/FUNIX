@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Fetch API</h1>
+    <script>
+    //   const myResponsee = fetch("https://geocode.xyz/52.508,13.381?geoit=json"); //=>fetch trả về một cái promise
+    const myResponsee = fetch("https://jsonplaceholder.typicode.com/posts/1")
+      console.log(myResponsee);
+      
+      myResponsee
+        .then((res) => {
+            console.log(res);
+            //phương thức "json" sẽ trả vè 1 promise và ở trạng thái thành công
+            //trả về kết quả là data ta mong muốn
+          return res.json(); //==>promise
+        })
+        .then((data) => console.log(data.title))//hiển thị dữ liệu 
+        .catch((err) => console.log(err));//thông báo lỗi
+    </script>
+  </body>
+</html>

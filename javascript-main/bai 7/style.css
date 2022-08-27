@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.a {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.number {
+  text-align: center;
+  font-size: 6rem;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.float {
+  color: white;
+  position: absolute;
+  top: 70%;
+  width: 100%;
+ 
+}
+.again{
+    padding: 20px;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputNumber {
+  height: 50px;
+  font-size: 20px;
+  width: 120px;
+  margin-bottom: 20px;
+}
+.check {
+  padding: 20px;
+  width: 100px;
+}
+
+.right {
+  float: left;
+  width: 50%;
+}
+.diem{
+    font-size: 20px;
+}
+.message{
+    margin-bottom: 30px;
+}

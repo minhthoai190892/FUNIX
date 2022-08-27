@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto";
+    color: #344a40;
+    border-bottom: 8px solid #087f5b;
+}
+.accodion{
+
+    width: 700px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.item{
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 24px;
+    row-gap: 32px;
+    align-items: center;
+}
+.number, .text{/* class, class */
+    
+    font-size: 24px;
+    font-weight: 500;
+    /* color: #087f5b; */
+
+}
+.number{
+    color: grey;
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    stroke: #087f5b;
+}
+.hiden-box{
+grid-column: 2;
+display: none;
+}
+.hiden-box p{ /* class <p> */
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+.hiden-box ul{
+    color: #adb5bd;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column; /*hướng hiển thị */
+    gap: 12px;
+}
+/* .hiden-box li{
+    margin-bottom: 12px;
+} */
+
+.open{
+    border-top: 4px solid #087f5b;
+}
+.open .hiden-box{ /* thuộc tính con */
+    display: block;
+}
+.open .number, .open .text{
+    color: #087f5b;
+}

@@ -1,0 +1,9 @@
+.gird-container{
+    border: 2px solid brown;
+    display: grid; 
+    grid-template-columns: auto auto auto;
+}
+.item{
+    border: 2px solid brown;
+
+}
