@@ -21,3 +21,25 @@ const fruitJuice = fruitProcessor(5,3)// "5,3" là đối số nhập vào hàm 
 console.log(fruitJuice);
 //ghi trực tiếp vào hàm
 console.log(fruitProcessor(2,3));
+
+
+//khai bao ham
+function calcAge1(birthYear){
+    //tao bien 
+    const age = 2037 -birthYear
+    //tra ve gia tri cua ham
+    return `age is ${age}`
+}
+console.log(calcAge1(2000));
+//bieu thuc ham
+const calcAge2 = function (birthYear) { 
+    return 2037 -birthYear
+ }
+ const age2 = calcAge2(2000)
+ console.log(age2);
+
+
+ const age3 = birthYear=>{ 2037 - birthYear 
+    console.log("asdqweqwe");
+}
+age3(2000);

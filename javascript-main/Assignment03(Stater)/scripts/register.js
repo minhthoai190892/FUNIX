@@ -59,15 +59,16 @@ function validateDate(user) {
     isValidate = false;
   }
   //Username không được trùng với Username của các người dùng trước đó.
-  // TODO:cách 1
+  // TODO:cách 2
   if (
+    //Phương thức every () kiểm tra xem tất cả các phần tử trong mảng có vượt qua kiểm tra được thực hiện bởi hàm được cung cấp hay không. Nó trả về một giá trị Boolean.
     !userArr.every((item) => (item.userName !== user.userName ? true : false))
   ) {
     alert("Username đã tồn tại.");
     isValidate = false;
   }
 
-  // TODO:cách 2
+  // TODO:cách 1
 
   // for (let index = 0; index < userArr.length; index++) {
   //   console.log(userArr[index]);
