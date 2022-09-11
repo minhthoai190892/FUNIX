@@ -21,7 +21,7 @@ console.log(population);
 console.log(description);
 let populationn = 33;
 let result = populationn - population;
-console.log("////////////////////////");
+console.log("////////////asd////////////");
 
 if (population > populationn) {
   console.log(`${country}'s population is above average`);
