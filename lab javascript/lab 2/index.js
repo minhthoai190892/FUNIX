@@ -75,5 +75,38 @@ if (population > 33) {
   console.log(`country: ${country} population: ${population} < 3 trieu`);
 }
 // TODO: 5
-const description = `<${country}> and its <${population}> million people speak <${language}>`
+const description = `<${country}> and its <${population}> million people speak <${language}>`;
 console.log(description);
+
+// TODO:Lab 2.6: Bài toán tổng hợp #1
+console.log("Lab 2.6: Bài toán tổng hợp #1");
+// TODO:Dữ liệu 1: Mark nặng 78 kg và cao 1.69 m. John nặng 92 kg và cao 1.95 m.
+const MarkMass = 78;
+const Markheight = 1.69;
+const JohnMass = 92;
+
+const Johnheight = 1.95;
+
+const BMIMark = MarkMass / (Markheight**2)
+const BMIJohn = JohnMass /(Johnheight *Johnheight)
+console.log(BMIMark ,BMIJohn);
+const markHigherBMI = BMIMark >BMIJohn
+console.log(markHigherBMI);
+
+
+// TODO:Dữ liệu 2: Mark nặng 95 kg và cao 1.88 m. John nặng 85 kg và cao 1.76 m.
+// const MarkMass = 95;
+// const Markheight =  1.88;
+// const JohnMass = 85;
+
+// const Johnheight = 1.76;
+
+// const BMIMark = MarkMass / Markheight**2
+// const BMIJohn = JohnMass /(Johnheight *Johnheight)
+// console.log(BMIMark ,BMIJohn);
+// const markHigherBMI = BMIMark >BMIJohn
+// console.log(markHigherBMI);
+// TODO:Lab 2.6.2. So sánh chỉ số IBM (phần 2)
+if (BMIMark > BMIJohn) {
+   console.log(`Mark's BMI (${BMIMark.toFixed(2)}) is higher than John's (${BMIJohn.toFixed(2)})!`);
+}
