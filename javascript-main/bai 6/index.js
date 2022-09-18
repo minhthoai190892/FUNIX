@@ -1,8 +1,6 @@
 'use strict';
 
-const x = 23;
-if (x === 23) {
-  console.log(23);
-}
-const a = (year) => 2020 - year;
-console.log(a(1992));
+const arr = [1,2,3]
+// arr = [4]
+arr[0] = 5
+console.log(arr);

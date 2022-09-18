@@ -7,10 +7,10 @@ const kate2 = [10, 5, 6, 1, 4];
 
 function checkDogs(dogJulia, dogKate) {
   //sao chép 1 mảng mới và lại bỏ 2 phần tử đầu và cuối
-  const newDogJulia = julia.slice(1, julia.length - 1);
+  const newDogJulia = dogJulia.slice(1, julia.length - 1);
   // console.log(newDogJulia);
   //tạo mảng mới với mảng julia và kate
-  const dogData = kate.concat(newDogJulia);
+  const dogData = newDogJulia.concat(dogKate);
   // console.log(dogData);
   dogData.forEach((element, index) => {
     element >= 3
