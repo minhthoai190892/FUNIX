@@ -63,10 +63,31 @@ public class App {
          * System.out.println(friends);
          */
 
-        System.out.println("================== GUI intro ==========================");
-        String name = JOptionPane.showInputDialog("Enter your name");
-        JOptionPane.showMessageDialog(null, "Hello " + name);
-        JOptionPane.showMessageDialog(null, "sadfasdf", "qweqwe", JOptionPane.ERROR_MESSAGE);
+        // System.out.println("================== GUI intro
+        // ==========================");
+        // // khai báo biến nhận nhận thông tin người dùng nhập
+        // String name = JOptionPane.showInputDialog("Enter your name");
+        // // hiển thị thông tin mà người dùng nhập
+        // JOptionPane.showMessageDialog(null, "Hello " + name);
+        // int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+        // JOptionPane.showMessageDialog(null, "Your age " + age + " years old");
+        // double hight = Double.parseDouble(JOptionPane.showInputDialog("Enter your
+        // hight"));
+        // JOptionPane.showMessageDialog(null, "You are " + hight + " cm tall");
+
+        // /**
+        // *
+        // */
+        // // JOptionPane.showMessageDialog(null, "sadfasdf", "qweqwe",
+        // // JOptionPane.ERROR_MESSAGE);
+        System.out.println("================== Math Class ==========================");
+
+        double x = 3.14;
+        double y = -10;
+        // double z = Math.abs(y);//giá trị tuyệt đối
+        // double z = Math.max(x, y);// max / min
+        double z = Math.sqrt(x); // căn bậc 2 
+        System.out.println(z);
 
     }
 }
