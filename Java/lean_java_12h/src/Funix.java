@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class lab {
+public class Funix {
     public static void main(String[] args) throws Exception {
         // int myValue = 10000;
         int myMinIntValue = Integer.MIN_VALUE;
