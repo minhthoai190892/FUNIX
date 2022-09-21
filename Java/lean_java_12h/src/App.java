@@ -157,23 +157,28 @@ public class App {
         // System.out.println(car[0]);
 
         // for (int i = 0; i < car.length; i++) {
-        //     System.out.println(car[i]);
+        // System.out.println(car[i]);
         // }
         // // 2D array
-        // String[][] car1 = { { "camaro0", "tesla0", "ford0" }, { "camaro1", "tesla1", "ford1" },
-        //         { "camaro2", "tesla2", "ford2" } };
-        //         for (int i = 0; i < car1.length; i++) {
-        //             System.out.println();
-        //             for (int j = 0; j < car1[i].length; j++) {
-        //                 System.out.println(car1[i][j]+"aasd");
-        //             }
-        //         }
-
-
-
+        // String[][] car1 = { { "camaro0", "tesla0", "ford0" }, { "camaro1", "tesla1",
+        // "ford1" },
+        // { "camaro2", "tesla2", "ford2" } };
+        // for (int i = 0; i < car1.length; i++) {
+        // System.out.println();
+        // for (int j = 0; j < car1[i].length; j++) {
+        // System.out.println(car1[i][j]+"aasd");
+        // }
+        // }
 
         System.out.println("================== String method ==========================");
-           
+        String name = "Bro";
+        // boolean result = name.equals("asdf");
+        // boolean result = name.equalsIgnoreCase("bro");
+        // int result = name.length();
+        // char result = name.charAt(0);
+        // int result = name.indexOf("r");
+        boolean result = name.isEmpty();
+        System.out.println(result);
 
     }
 }
