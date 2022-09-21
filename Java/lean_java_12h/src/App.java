@@ -1,4 +1,7 @@
-import javax.swing.JOptionPane;
+import java.util.Random;
+import java.util.Scanner;
+
+// import javax.swing.JOptionPane;
 
 // import java.util.Scanner;
 
@@ -6,6 +9,8 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
+        Scanner scanner = new Scanner(System.in);
+
         /*
          * int x;// declaration
          * x = 10;// assignment
@@ -80,14 +85,95 @@ public class App {
         // */
         // // JOptionPane.showMessageDialog(null, "sadfasdf", "qweqwe",
         // // JOptionPane.ERROR_MESSAGE);
-        System.out.println("================== Math Class ==========================");
 
-        double x = 3.14;
-        double y = -10;
-        // double z = Math.abs(y);//giá trị tuyệt đối
-        // double z = Math.max(x, y);// max / min
-        double z = Math.sqrt(x); // căn bậc 2 
-        System.out.println(z);
+        // System.out.println("================== Math Class
+        // ==========================");
+
+        // // double x = 3.14;
+        // // double y = -10;
+        // // // double z = Math.abs(y);//giá trị tuyệt đối
+        // // // double z = Math.max(x, y);// max / min
+        // // double z = Math.sqrt(x); // căn bậc 2
+        // // System.out.println(z);
+        // // tinh canh huyen
+        // double x, y, z;
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.println("Enter X: ");
+        // x = scanner.nextDouble();
+        // System.out.println("Enter Y: ");
+        // y = scanner.nextDouble();
+        // z = Math.sqrt((x * x) + (y * y));
+        // System.out.println("The hypotenuse is: " + z);
+        // scanner.close();
+
+        // System.out.println("================== Random number
+        // ==========================");
+        // //tao doi tuong random
+        // Random random = new Random();
+        // // int x = random.nextInt(4);
+        // double x = random.nextDouble();
+        // System.out.println(x);
+
+        // System.out.println("================== While ==========================");
+        // Scanner scanner = new Scanner(System.in);
+        // String name = "";
+        // while (name.isEmpty()) {
+        // System.out.println("Enter your name: ");
+        // name = scanner.nextLine();
+        // }
+        // System.out.println("Hello " + name);
+        // scanner.close();
+
+        // System.out.println("================== For ==========================");
+
+        // for (int i = 0; i < 10; i++) {
+        // System.out.println(i+1);
+        // }
+        // for (int i = 10; i >= 0; i--) {
+        // System.out.println(i);
+
+        // }
+        // System.out.println("game over");
+
+        // int rows, columns;
+        // String symbol = "";
+        // System.out.println("Enter # of rows: ");
+        // rows = scanner.nextInt();
+        // System.out.println("Enter # of columns: ");
+        // columns = scanner.nextInt();
+        // System.out.println("Enter symbol to use: ");
+        // symbol = scanner.next();
+        // for (int i = 1; i <= rows; i++) {
+        // System.out.println();
+        // for (int index = 1; index <= columns; index++) {
+        // System.out.println(symbol);
+        // }
+        // }
+
+        // System.out.println("================== Array ==========================");
+        // // khi báo mãng
+        // String[] car = { "camaro", "tesla", "ford" };
+        // car[0] = "lambo";
+        // System.out.println(car[0]);
+
+        // for (int i = 0; i < car.length; i++) {
+        //     System.out.println(car[i]);
+        // }
+        // // 2D array
+        // String[][] car1 = { { "camaro0", "tesla0", "ford0" }, { "camaro1", "tesla1", "ford1" },
+        //         { "camaro2", "tesla2", "ford2" } };
+        //         for (int i = 0; i < car1.length; i++) {
+        //             System.out.println();
+        //             for (int j = 0; j < car1[i].length; j++) {
+        //                 System.out.println(car1[i][j]+"aasd");
+        //             }
+        //         }
+
+
+
+
+        System.out.println("================== String method ==========================");
+           
 
     }
 }
