@@ -1,5 +1,7 @@
 package lab1;
 
+import java.util.Scanner;
+
 public class lab2 {
     public static void main(String[] args) {
         System.out.println("============== 2.1. Biến và cách khai báo biến trong Java ============");
@@ -23,7 +25,11 @@ public class lab2 {
         System.out.println("============== 2.4. Kiểu ký tự (char) trong Java ============");
         char c = 'x';
 		System.out.println(c);
-
+        
+        Scanner scanner = new Scanner(System.in);
+        String namee = scanner.nextLine();
+        System.out.println("Heelo "+namee);
+        scanner.close();
 
 
         // 
