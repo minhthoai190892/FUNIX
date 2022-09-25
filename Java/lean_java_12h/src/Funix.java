@@ -60,97 +60,127 @@ public class Funix {
         // System.out.println("myFloatValue: " + myFloatValue);
         // System.out.println("myDoubleValue: " + myDoubleValue);
 
-        System.out.println("=============== 33. Operators, Operands and Expressions =================");
+        // System.out.println("=============== 33. Operators, Operands and Expressions
+        // =================");
 
-        int a = 10, b = 20;
-        int result = a + b; // 30
+        // int a = 10, b = 20;
+        // int result = a + b; // 30
 
-        System.out.println("10+20 =" + result);
-        result %= 3; // 30%3 = 0
-        System.out.println(result);
+        // System.out.println("10+20 =" + result);
+        // result %= 3; // 30%3 = 0
+        // System.out.println(result);
 
-        System.out.println("=============== 34. Abbreviating Operators =================");
-        result++; // 0+1=1
-        System.out.println(result);
-        result += 2;
-        System.out.println(result);
-        result *= 10;
-        System.out.println(result);
+        // System.out.println("=============== 34. Abbreviating Operators
+        // =================");
+        // result++; // 0+1=1
+        // System.out.println(result);
+        // result += 2;
+        // System.out.println(result);
+        // result *= 10;
+        // System.out.println(result);
 
-        System.out.println("=============== 35. if-then Statement =================");
-        boolean isAlien = false;
-        if (isAlien != false) {
-            System.out.println("It is not an alient!");
-        }
-        System.out.println("It is an alient!");
-        System.out.println("=============== 36. Logical and Operator =================");
+        // System.out.println("=============== 35. if-then Statement
+        // =================");
+        // boolean isAlien = false;
+        // if (isAlien != false) {
+        // System.out.println("It is not an alient!");
+        // }
+        // System.out.println("It is an alient!");
+        // System.out.println("=============== 36. Logical and Operator
+        // =================");
 
-        int topScore = 80;
-        int secondScore = 60;
-        if (topScore > 70 && secondScore > 50) {
-            System.out.println("Score 60 - 80");
+        // int topScore = 80;
+        // int secondScore = 60;
+        // if (topScore > 70 && secondScore > 50) {
+        // System.out.println("Score 60 - 80");
 
-        }
-        System.out.println("=============== 38. Assignment Operator VS Equals to Operator =================");
-        int value = 50;
-        if (value == 50) {
+        // }
+        // System.out.println("=============== 38. Assignment Operator VS Equals to
+        // Operator =================");
+        // int value = 50;
+        // if (value == 50) {
 
-        }
-        boolean isCar = false;
-        if (isCar == true) {
-            System.out.println(isCar);
-        }
-        System.out.println("=============== 39. Ternary Operator =================");
-        boolean wasCar = isCar ? true : false;
-        System.out.println(wasCar);
-        int valueNumber = 20;
-        boolean checkNumber = valueNumber == 2 ? true : false;
-        System.out.println(checkNumber);
-        System.out.println("=============== 40. Operator Precedence and Operator Challenge =================");
-        // 1. create a double variable with a value of 20.00
-        double myFirstValue = 20.00d;
-        // 2. create a second variable with a value of 80.00
-        double mySecondValue = 80.00d;
-        // 3. add both numbers together and multiply by 100.00
-        double myValuesTotal = myFirstValue + mySecondValue;
-        System.out.println("myValuesTotal: " + myValuesTotal);
-        /*
-         * 4. use the remainder operator to figure out what the remainder from the
-         * result of the
-         * operation in step 3 and 40.00. We used the modulus or remainder operator on
-         * ints in the course, but we can also
-         * use it on a double
-         * 
-         * 
-         */
-        double theRemainder = myValuesTotal % 40.00d;
-        System.out.println("theRemainder: " + theRemainder);
-        // 5. Create a boolen variable that assgins the value true if the remainder in
-        // #4 is 0, or false if its not zero
-        boolean isNoRemainder = theRemainder == 0 ? true : false;
-        System.out.println("isNoRemainder: " + isNoRemainder);
+        // }
+        // boolean isCar = false;
+        // if (isCar == true) {
+        // System.out.println(isCar);
+        // }
+        // System.out.println("=============== 39. Ternary Operator =================");
+        // boolean wasCar = isCar ? true : false;
+        // System.out.println(wasCar);
+        // int valueNumber = 20;
+        // boolean checkNumber = valueNumber == 2 ? true : false;
+        // System.out.println(checkNumber);
+        // System.out.println("=============== 40. Operator Precedence and Operator
+        // Challenge =================");
+        // // 1. create a double variable with a value of 20.00
+        // double myFirstValue = 20.00d;
+        // // 2. create a second variable with a value of 80.00
+        // double mySecondValue = 80.00d;
+        // // 3. add both numbers together and multiply by 100.00
+        // double myValuesTotal = myFirstValue + mySecondValue;
+        // System.out.println("myValuesTotal: " + myValuesTotal);
+        // /*
+        // * 4. use the remainder operator to figure out what the remainder from the
+        // * result of the
+        // * operation in step 3 and 40.00. We used the modulus or remainder operator on
+        // * ints in the course, but we can also
+        // * use it on a double
+        // *
+        // *
+        // */
+        // double theRemainder = myValuesTotal % 40.00d;
+        // System.out.println("theRemainder: " + theRemainder);
+        // // 5. Create a boolen variable that assgins the value true if the remainder
+        // in
+        // // #4 is 0, or false if its not zero
+        // boolean isNoRemainder = theRemainder == 0 ? true : false;
+        // System.out.println("isNoRemainder: " + isNoRemainder);
 
-        /*
-         *
-         * 7. Write an "if-then" statement that displays a message "Got some remainder"
-         * if the boolen in step5 "is not true".
-         * Don't be surprised if you see output for this step, where your might expect
-         * it not to show.
-         * i'll explain it my soluion
-         * 
-         */
-        if (!isNoRemainder) {
-            System.out.println("Got some remainder");
+        // /*
+        // *
+        // * 7. Write an "if-then" statement that displays a message "Got some
+        // remainder"
+        // * if the boolen in step5 "is not true".
+        // * Don't be surprised if you see output for this step, where your might expect
+        // * it not to show.
+        // * i'll explain it my soluion
+        // *
+        // */
+        // if (!isNoRemainder) {
+        // System.out.println("Got some remainder");
 
-        }
+        // }
 
         System.out.println("=============== 48. Methods In Java =================");
 
-
-
-
-
-        // 
+        // goi ham
+        int a = calculateScore(true, 10000, 8, 200);
+        System.out.println(a);
+        //
+        /*
+         * Create a method called displayHighScorePosition
+         * it should a players name as a parmeter, and a 2nd parameter as a position
+         * in the hight score table
+         * 
+         * you should display the players name along with a message like
+         * "managed to get into position"
+         * and the position they got and a further messgae "on the high score table"
+         * create a 2nd method called calculateHighScorePosition
+         * it should be sent one argument only, the player score
+         * it should return an int
+         * the return data should be
+         * 1 if the score is > 1000
+         * 2 if the score is >500 and <1000
+         * 3 if the score is >100 and <500
+         * 5 in all other cases
+         * call both methods and display the resultes of the following
+         * a score of 1500, 900, 400 and 50
+         */
+        // goi ham nhp diem
+        int highScore = calculateHighScorePosition(50);
+        // goi ham hien thi ten va diem
+        displayHighScorePosition("Thoai", highScore);
         // System.out.println("=============== 71. Parsing Values from a String
         // =================");
         // String numberAsString = "2018";
@@ -174,8 +204,67 @@ public class Funix {
         // =================");
 
         //
-       
+
     }
-   
-  
+
+    // System.out.println("=============== 48. Methods In Java =================");
+    /**
+     * 
+     * @param gameOver      true
+     * @param score         =10000
+     * @param levelComplete 8
+     * @param bounus        200
+     * @return
+     */
+    // public static void calculateScore(boolean gameOver, int score, int
+    // levelComplete, int bounus) {
+    // if (gameOver) { //gameOver = true
+    // int finalScore = score + (levelComplete * bounus);//10000+1600
+    // //"finalScore" tang len 1000
+    // finalScore += 1000;
+    // System.out.println("Youre final score was " + finalScore);
+    // }
+    // }
+    // su dung "return" khai bao ham dung voi "kieu du lieu" tra ve
+    public static int calculateScore(boolean gameOver, int score, int levelComplete, int bounus) {
+        if (gameOver) { // gameOver = true
+            int finalScore = score + (levelComplete * bounus);// 10000+1600
+            // "finalScore" tang len 1000
+            finalScore += 1000;
+            return finalScore;
+        }
+        return -1;
+    }
+
+    // display name and highscore
+    /**
+     * 
+     * @param name              ten nguoi dung nhap vao
+     * @param highScorePosition vi tri diem cao nhat
+     */
+    public static void displayHighScorePosition(String playerName, int highScorePosition) {
+        System.out
+                .println(playerName + " managed to get into position " + highScorePosition + " on the high score table");
+    }
+
+    // ham tinh diem cao nhat
+    /**
+     * ham nhap Score
+     * 
+     * @param playerScore
+     * @return
+     */
+    public static int calculateHighScorePosition(int playerScore) {
+        if (playerScore > 1000) {
+            return 1;
+        } else if (playerScore > 500 && playerScore < 1000) {
+            return 2;
+        } else if (playerScore > 100 && playerScore < 500) {
+            return 3;
+        } else {
+            return 4;
+        }
+
+    }
+
 }
