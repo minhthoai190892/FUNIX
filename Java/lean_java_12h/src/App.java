@@ -150,9 +150,13 @@ public class App {
         // }
         // }
 
-        // System.out.println("================== Array ==========================");
-        // // khi báo mãng
-        // String[] car = { "camaro", "tesla", "ford" };
+        System.out.println("================== Array ==========================");
+        // khi báo mãng
+        String[] car = { "camaro", "tesla", "ford" };
+        for (int i = 0; i < car.length; i++) {
+            System.out.println(car[i]);
+            
+        }
         // car[0] = "lambo";
         // System.out.println(car[0]);
 
@@ -170,19 +174,20 @@ public class App {
         // }
         // }
 
-        System.out.println("================== String method ==========================");
-        String name = "Bro    ";
-        // boolean result = name.equals("asdf");
-        // boolean result = name.equalsIgnoreCase("bro");
-        // int result = name.length();
-        // char result = name.charAt(0);
-        // int result = name.indexOf("r");
-        // boolean result = name.isEmpty();
-        // String result = name.toLowerCase();
-        // String result = name.toUpperCase();
-        // String result = name.trim();
-        String result = name.replace("B", "P");
-        System.out.println(result);
+        // System.out.println("================== String method ==========================");
+        // String name = "Bro    ";
+        // // boolean result = name.equals("asdf");
+        // // boolean result = name.equalsIgnoreCase("bro");
+        // // int result = name.length();
+        // // char result = name.charAt(0);
+        // // int result = name.indexOf("r");
+        // // boolean result = name.isEmpty();
+        // // String result = name.toLowerCase();
+        // // String result = name.toUpperCase();
+        // // String result = name.trim();
+        // String result = name.replace("B", "P");
+        // System.out.println(result);
+    
 
     }
 }

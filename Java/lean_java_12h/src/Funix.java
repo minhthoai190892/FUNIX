@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.UUID;
 
 public class Funix {
     public static void main(String[] args) throws Exception {
@@ -178,7 +179,7 @@ public class Funix {
          * a score of 1500, 900, 400 and 50
          */
         // goi ham nhp diem
-        int highScore = calculateHighScorePosition(50);
+        int highScore = calculateHighScorePosition(1550);
         // goi ham hien thi ten va diem
         displayHighScorePosition("Thoai", highScore);
         // System.out.println("=============== 71. Parsing Values from a String
@@ -204,7 +205,8 @@ public class Funix {
         // =================");
 
         //
-
+        // UUID uuid = UUID.randomUUID();
+        // System.out.println("UUID: " + uuid.toString());
     }
 
     // System.out.println("=============== 48. Methods In Java =================");
@@ -244,7 +246,8 @@ public class Funix {
      */
     public static void displayHighScorePosition(String playerName, int highScorePosition) {
         System.out
-                .println(playerName + " managed to get into position " + highScorePosition + " on the high score table");
+                .println(
+                        playerName + " managed to get into position " + highScorePosition + " on the high score table");
     }
 
     // ham tinh diem cao nhat
@@ -255,16 +258,22 @@ public class Funix {
      * @return
      */
     public static int calculateHighScorePosition(int playerScore) {
-        if (playerScore > 1000) {
-            return 1;
-        } else if (playerScore > 500 && playerScore < 1000) {
-            return 2;
-        } else if (playerScore > 100 && playerScore < 500) {
-            return 3;
-        } else {
-            return 4;
-        }
-
+        // if (playerScore >= 1000) {
+        // return 1;
+        // } else if (playerScore >= 500) {
+        // return 2;
+        // } else if (playerScore >= 100) {
+        // return 3;
+        // }
+        // return 4;
+        int position = 4;
+        if (playerScore >= 1000) {
+            position = 1;
+        } else if (playerScore >= 500) {
+            position =2;
+        } else if (playerScore >= 100) {
+            position =3;
+        } 
+        return position;
     }
-
 }
