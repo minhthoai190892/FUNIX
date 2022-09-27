@@ -94,15 +94,15 @@ public class lab4 {
         // System.out.println("Enter number a: ");
         // c = Integer.parseInt(scanner.nextLine());
         // if (a > b && a > c) {
-        //     System.out.println(a);
+        // System.out.println(a);
         // } else if (b > a && b > c) {
-        //     System.out.println(b);
+        // System.out.println(b);
 
         // } else if (c > a && c > b) {
-        //     System.out.println(c);
+        // System.out.println(c);
 
         // } else {
-        //     System.out.println("a=b=c");
+        // System.out.println("a=b=c");
 
         // }
         /*
@@ -116,26 +116,27 @@ public class lab4 {
         // System.out.println("Enter number a: ");
         // a = Integer.parseInt(scanner.nextLine());
         // if (a>=10 && a<=100) {
-        //     System.out.println("a is in the range [10, 100]");
+        // System.out.println("a is in the range [10, 100]");
         // } else {
-        //     System.out.println("a is not in the range [10, 100]");
+        // System.out.println("a is not in the range [10, 100]");
 
         // }
-            /*
-             * Task
-             * Write a program that accepts two integers a and b from the user then checks
-             * whether both a and b are not equal to zero or not.
-             */
-            int a,b;
-            System.out.println("Enter number a: ");
-            a = Integer.parseInt(scanner.nextLine());
-            System.out.println("Enter number b: ");
-            b = Integer.parseInt(scanner.nextLine());
-            if (a!=0 && b!=0) {
-                System.out.println("a is not equal to 0 and b is not equal to 0");
-            }else{
-                System.out.println("a is equal to 0 or b is equal to 0");
-            }
-            
+        /*
+         * Task
+         * Write a program that accepts two integers a and b from the user then checks
+         * whether both a and b are not equal to zero or not.
+         */
+        int a, b;
+        System.out.println("Enter number a: ");
+        a = Integer.parseInt(scanner.nextLine());
+        System.out.println("Enter number b: ");
+        b = Integer.parseInt(scanner.nextLine());
+        if (a != 0 && b != 0) {
+            System.out.println("a is not equal to 0 and b is not equal to 0");
+        } else {
+            System.out.println("a is equal to 0 or b is equal to 0");
+        }
+        scanner.close();
+
     }
 }

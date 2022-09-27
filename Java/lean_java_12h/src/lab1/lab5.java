@@ -40,14 +40,16 @@ public class lab5 {
 
         System.out.println(
                 "========= 5.5. Bài tập Java cơ bản: viết phương thức đệ quy tính tổng các phần tử của mảng. ======");
-        System.out.println("nhập số lượng phần tử trong mảng: ");
+        System.out.println("Basic Java exercise: write a recursive method to sum the elements of an array.");
+                System.out.println("nhập số lượng phần tử trong mảng: ");
         int n = scanner.nextInt();
 
         int[] arr = new int[n];// tạo mảng
         for (int i = 0; i < n; i++) { // duyệt mảng với i< "số lượng phần tử mảng"
-            arr[i] = scanner.nextInt();//thêm vào mảng
+            arr[i] = scanner.nextInt();// thêm vào mảng
         }
-        System.out.print(sumOfArray(arr, n));
+        System.out.println(arr);
+        // System.out.print(sumOfArray(arr, n));
 
         scanner.close();
 

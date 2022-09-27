@@ -1,5 +1,5 @@
-import java.util.Scanner;
-import java.util.UUID;
+// import java.util.Scanner;
+// import java.util.UUID;
 
 public class Funix {
     public static void main(String[] args) throws Exception {
@@ -29,8 +29,7 @@ public class Funix {
         // long bigLongLiteralValue = 2_147_483_647_234L;
         // System.out.println("bigLongLiteralValue: " + bigLongLiteralValue);
 
-        // System.out.println("=============== 28. Primitive Types Challenge
-        // =================");
+        System.out.println("=============== 28. Primitive Types Challenge =================");
         // byte byteValue = 10;
         // short shortValue = 20;
         // int intValue = 50;
@@ -42,8 +41,7 @@ public class Funix {
         // System.out.println(shortTotal);
 
         // // 29. float and double Primitive Types
-        // System.out.println("=============== 29. float and double Primitive Types
-        // =================");
+        System.out.println("=============== 29. float and double Primitive Types =================");
         // float myMinFloatValue = Float.MIN_VALUE;
         // float myMaxFloatValue = Float.MAX_VALUE;
         // System.out.println("myMinFloatValue: " + myMinFloatValue);
@@ -61,8 +59,7 @@ public class Funix {
         // System.out.println("myFloatValue: " + myFloatValue);
         // System.out.println("myDoubleValue: " + myDoubleValue);
 
-        // System.out.println("=============== 33. Operators, Operands and Expressions
-        // =================");
+        System.out.println("=============== 33. Operators, Operands and Expressions =================");
 
         // int a = 10, b = 20;
         // int result = a + b; // 30
@@ -71,8 +68,7 @@ public class Funix {
         // result %= 3; // 30%3 = 0
         // System.out.println(result);
 
-        // System.out.println("=============== 34. Abbreviating Operators
-        // =================");
+        System.out.println("=============== 34. Abbreviating Operators =================");
         // result++; // 0+1=1
         // System.out.println(result);
         // result += 2;
@@ -80,15 +76,13 @@ public class Funix {
         // result *= 10;
         // System.out.println(result);
 
-        // System.out.println("=============== 35. if-then Statement
-        // =================");
+        System.out.println("=============== 35. if-then Statement =================");
         // boolean isAlien = false;
         // if (isAlien != false) {
         // System.out.println("It is not an alient!");
         // }
         // System.out.println("It is an alient!");
-        // System.out.println("=============== 36. Logical and Operator
-        // =================");
+        System.out.println("=============== 36. Logical and Operator =================");
 
         // int topScore = 80;
         // int secondScore = 60;
@@ -96,8 +90,7 @@ public class Funix {
         // System.out.println("Score 60 - 80");
 
         // }
-        // System.out.println("=============== 38. Assignment Operator VS Equals to
-        // Operator =================");
+        System.out.println("=============== 38. Assignment Operator VS Equals to Operator =================");
         // int value = 50;
         // if (value == 50) {
 
@@ -106,14 +99,13 @@ public class Funix {
         // if (isCar == true) {
         // System.out.println(isCar);
         // }
-        // System.out.println("=============== 39. Ternary Operator =================");
+        System.out.println("=============== 39. Ternary Operator =================");
         // boolean wasCar = isCar ? true : false;
         // System.out.println(wasCar);
         // int valueNumber = 20;
         // boolean checkNumber = valueNumber == 2 ? true : false;
         // System.out.println(checkNumber);
-        // System.out.println("=============== 40. Operator Precedence and Operator
-        // Challenge =================");
+        System.out.println("=============== 40. Operator Precedence and Operator Challenge =================");
         // // 1. create a double variable with a value of 20.00
         // double myFirstValue = 20.00d;
         // // 2. create a second variable with a value of 80.00
@@ -156,8 +148,8 @@ public class Funix {
         System.out.println("=============== 48. Methods In Java =================");
 
         // goi ham
-        int a = calculateScore(true, 10000, 8, 200);
-        System.out.println(a);
+        // int a = calculateScore(true, 10000, 8, 200);
+        // System.out.println(a);
         //
         /*
          * Create a method called displayHighScorePosition
@@ -179,18 +171,45 @@ public class Funix {
          * a score of 1500, 900, 400 and 50
          */
         // goi ham nhp diem
-        int highScore = calculateHighScorePosition(1550);
-        // goi ham hien thi ten va diem
-        displayHighScorePosition("Thoai", highScore);
-        // System.out.println("=============== 71. Parsing Values from a String
-        // =================");
+        // int highScore = calculateHighScorePosition(1550);
+        // // goi ham hien thi ten va diem
+        // displayHighScorePosition("Thoai", highScore);
+        System.out.println("=============== 63. The switch statement (+Challenge Exercise) =================");
+        // switchTest("e");
+        // printDayOfTheWeek(0);
+        // printDayOfTheWeek(1);
+        // printDayOfTheWeek(2);
+        // printDayOfTheWeek(3);
+        // printDayOfTheWeek(4);
+        // printDayOfTheWeek(5);
+        // printDayOfTheWeek(6);
+        // printDayOfTheWeek(7);
+        //
+        System.out.println("=============== 65. The for Statement (+Challenge Exercise) =================");
+        /*
+         * using the "for" statement, call the calculateInterest method with
+         * the "amount" of 10000 with an interesRate of 2->8 and print the results
+         * 
+         */
+        // for (int i = 2; i < 9; i++) {
+        //     System.out.println("10000 at " + i + " % interest " + String.format("%.2f", calculateInterest(10000, i)));
+        // }
+
+            int count =0;
+            for (int i = 10 ; i < 50; i++) {
+                if (isPrime(i)) {
+                   count++;
+                   
+                }
+            }
+
+        System.out.println("=============== 71. Parsing Values from a String =================");
         // String numberAsString = "2018";
         // System.out.println(numberAsString);
         // int number = Integer.parseInt(numberAsString);
         // System.out.println(number);
 
-        // System.out.println("=============== 72. Reading User Input
-        // =================");
+        System.out.println("=============== 72. Reading User Input =================");
         // Scanner scanner = new Scanner(System.in);
         // System.out.println("Enter your year of birth: ");
         // int yearOfBirth = scanner.nextInt();
@@ -201,8 +220,7 @@ public class Funix {
         // System.out.println("Your name is: " + name + ", and you are " + age + " years
         // old");
         // scanner.close();
-        // System.out.println("=============== 141. Naming Conventions
-        // =================");
+        System.out.println("=============== 141. Naming Conventions =================");
 
         //
         // UUID uuid = UUID.randomUUID();
@@ -270,10 +288,110 @@ public class Funix {
         if (playerScore >= 1000) {
             position = 1;
         } else if (playerScore >= 500) {
-            position =2;
+            position = 2;
         } else if (playerScore >= 100) {
-            position =3;
-        } 
+            position = 3;
+        }
         return position;
     }
+
+    // =============== 63. The switch statement (+Challenge Exercise)
+    // =================
+    /**
+     * Create a new switch statement using char instead of int
+     * create a new char variable
+     * create a switch staement testing for A,B,C,D,E
+     * display a message if any of these are found and then break
+     * add a default which displays a message saying not found
+     * 
+     * @param charValue
+     */
+    public static void switchTest(String charValue) {
+        switch (charValue.toUpperCase()) {
+            case "A":
+                System.out.println("A was found");
+                break;
+            case "B":
+            case "C":
+            case "D":
+            case "E":
+                System.out.println(charValue + " was found");
+                break;
+            default:
+                System.out.println("Could not find A,B,C,D or E");
+
+                break;
+        }
+    }
+
+    /**
+     * Print day of the week
+     * 
+     * @param day
+     */
+    public static void printDayOfTheWeek(int day) {
+        switch (day) {
+            case 0:
+                System.out.println("Sunday");
+                break;
+
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+
+            default:
+                System.out.println("Invalid day");
+                break;
+        }
+    }
+    // System.out.println("=============== 65. The for Statement (+Challenge
+    // Exercise) =================");
+
+    public static double calculateInterest(double amount, double interstRate) {
+
+        return amount * (interstRate / 100);
+
+    }
+
+    /**
+     * Định nghĩa: số nguyên tố là số lớn hơn 1 và chỉ chia hết cho 1 và chính nó.
+     * 
+     * Ví dụ: 2, 3, 5, 7, 11, 13, 17, ... là những số nguyên tố.
+     * 
+     * Chú ý: Số 0 và 1 không phải là số nguyên tố. Chỉ có số 2 là số nguyên tố
+     * chẵn, tất cả các số chẵn khác không phải là số nguyên tố vì chúng chia hết
+     * cho 2.
+     * (n/2) => so le
+     * 
+     * @param n
+     * @return
+     */
+    public static boolean isPrime(int n) {
+        if (n == 1) {
+            return false;
+        }
+        for (int i = 2; i <= n / 2; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+
+    }
+
 }
