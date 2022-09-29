@@ -1,3 +1,6 @@
+import java.util.Random;
+import java.util.Scanner;
+
 // import java.util.Random;
 // import java.util.Scanner;
 
@@ -108,12 +111,31 @@ public class App {
 
         // System.out.println("================== Random number
         // ==========================");
-        // //tao doi tuong random
+        // tao doi tuong random
         // Random random = new Random();
-        // // int x = random.nextInt(4);
-        // double x = random.nextDouble();
+        // int x = random.nextInt(4);
+        // // double x = random.nextDouble();
         // System.out.println(x);
-
+        // Random generator = new Random();
+        int code = (int) Math.floor(((Math.random() * 899999) + 100000));
+        System.out.println(code);
+        Scanner scanner = new Scanner(System.in);
+        int a = Integer.parseInt(scanner.nextLine());
+        if (a == code) {
+            System.out.println("ok");
+        } else {
+            System.out.println("no");
+        }
+       
+        scanner.close();
+        // System.out.println("Random Long: " + generator.nextLong());
+        // System.out.println("Random Float: " + generator.nextFloat());
+        // System.out.println("Random Double: " + generator.nextDouble());
+        // System.out.println("Random Boolean: " + generator.nextBoolean());
+        // byte[] bytes = "gpcoder.com".getBytes();
+        // System.out.println("Before Random Bytes : " + new String(bytes));
+        // generator.nextBytes(bytes);
+        // System.out.println("After Random Bytes : " + new String(bytes));
         // System.out.println("================== While ==========================");
         // Scanner scanner = new Scanner(System.in);
         // String name = "";
@@ -152,11 +174,11 @@ public class App {
 
         System.out.println("================== Array ==========================");
         // khi báo mãng
-        String[] car = { "camaro", "tesla", "ford" };
-        for (int i = 0; i < car.length; i++) {
-            System.out.println(car[i]);
-            
-        }
+        // String[] car = { "camaro", "tesla", "ford" };
+        // for (int i = 0; i < car.length; i++) {
+        // System.out.println(car[i]);
+
+        // }
         // car[0] = "lambo";
         // System.out.println(car[0]);
 
@@ -164,18 +186,24 @@ public class App {
         // System.out.println(car[i]);
         // }
         // // 2D array
-        // String[][] car1 = { { "camaro0", "tesla0", "ford0" }, { "camaro1", "tesla1",
-        // "ford1" },
-        // { "camaro2", "tesla2", "ford2" } };
+        // String a = "001";
+        // String[][] car1 = { { "001", "002", "003" }, { "Ha NOi", "Ho Chi Minh",
+        // "Ca Mau" },
+        // };
         // for (int i = 0; i < car1.length; i++) {
+        // // System.out.println(car1[i]);
         // System.out.println();
         // for (int j = 0; j < car1[i].length; j++) {
-        // System.out.println(car1[i][j]+"aasd");
-        // }
+        // System.out.print(car1[i][j] + " ");
         // }
 
-        // System.out.println("================== String method ==========================");
-        // String name = "Bro    ";
+        // }
+        // int random = (int) Math.random();
+        // System.out.println(random);
+
+        // System.out.println("================== String method
+        // ==========================");
+        // String name = "Bro ";
         // // boolean result = name.equals("asdf");
         // // boolean result = name.equalsIgnoreCase("bro");
         // // int result = name.length();
@@ -187,7 +215,6 @@ public class App {
         // // String result = name.trim();
         // String result = name.replace("B", "P");
         // System.out.println(result);
-    
 
     }
 }

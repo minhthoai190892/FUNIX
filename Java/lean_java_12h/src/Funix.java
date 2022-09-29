@@ -3,6 +3,8 @@
 
 public class Funix {
     public static void main(String[] args) throws Exception {
+        //! System.out.println("========  =======");
+
         // int myValue = 10000;
         // int myMinIntValue = Integer.MIN_VALUE;
         // int myMaxIntValue = Integer.MAX_VALUE;
@@ -192,17 +194,64 @@ public class Funix {
          * 
          */
         // for (int i = 2; i < 9; i++) {
-        //     System.out.println("10000 at " + i + " % interest " + String.format("%.2f", calculateInterest(10000, i)));
+        // System.out.println("10000 at " + i + " % interest " + String.format("%.2f",
+        // calculateInterest(10000, i)));
         // }
 
-            int count =0;
-            for (int i = 10 ; i < 50; i++) {
-                if (isPrime(i)) {
-                   count++;
-                   
-                }
+        // int count = 0;
+        // for (int i = 10; i < 50; i++) {
+        // if (isPrime(i)) {
+        // count++; // * tăng "count" lên một
+        // System.out.println("Number " + i + " is a prime number");
+        // if (count == 3) {// ! kiểm tra nếu count tăng lên 3 thì thoát vòng lập
+        // System.out.println("Exiting for loop");
+        // break;
+        // }
+        // }
+        // }
+        //
+        System.out.println("=============== 66. For Loop Recap =================");
+        //
+        System.out.println("=============== 67. Sum 3 and 5 Challenge =================");
+        // methodSum(1000);
+        System.out.println(
+                "=============== 68. The while and do while statements (+Challenge Exercise) =================");
+        // int count = 1;
+        // while (count != 6) {
+        // System.out.println(count);
+        // count++;
+        // }
+        // System.out.println("---");
+        // for (int i = 1; i < 7; i++) {
+        // System.out.println(count);
+        // }
+        // while (true) {
+        // if (count == 10) {
+        // break;
+        // } // ! =>
+        // System.out.println(count);
+        // count++;
+        // }
+        // System.out.println("----");
+        // do {
+        // System.out.println(count);
+        // count++;
+        // } while (count != 10);
+        int number = 4;
+        int finisNumber = 20;
+        int evenNumbersFound = 0;
+        while (number <= finisNumber) {
+            number++;
+            if (!IsEvenNumber(number)) {
+                continue;
             }
-
+            evenNumbersFound++;
+            if (evenNumbersFound >= 5) {
+                break;
+            }
+            System.out.println("Even number " + number);
+        }
+        System.out.println("Even Number Found " + evenNumbersFound);
         System.out.println("=============== 71. Parsing Values from a String =================");
         // String numberAsString = "2018";
         // System.out.println(numberAsString);
@@ -220,6 +269,11 @@ public class Funix {
         // System.out.println("Your name is: " + name + ", and you are " + age + " years
         // old");
         // scanner.close();
+
+        
+
+        System.out.println("======== 99. Arrays =======");
+        
         System.out.println("=============== 141. Naming Conventions =================");
 
         //
@@ -376,7 +430,7 @@ public class Funix {
      * Chú ý: Số 0 và 1 không phải là số nguyên tố. Chỉ có số 2 là số nguyên tố
      * chẵn, tất cả các số chẵn khác không phải là số nguyên tố vì chúng chia hết
      * cho 2.
-     * (n/2) => so le
+     * ! (n/2) => 10/2 = 5 => for run to 2 form 5
      * 
      * @param n
      * @return
@@ -394,4 +448,41 @@ public class Funix {
 
     }
 
+    public static void methodSum(int n) {
+        int count = 0;
+        int sum = 0;
+        for (int i = 1; i < n; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                count++;
+                sum += i;
+                System.out.println("Found number = " + i);
+            }
+            if (count == 5) {
+                break;
+            }
+        }
+        System.out.println("Sum = " + sum);
+    }
+
+    // System.out.println(
+    // "=============== 68. The while and do while statements (+Challenge Exercise)
+    // =================");
+    /**
+     * Create a method called isEvenNumber that takes a parameter of type int
+     * Its purpose is to determine if the argument passed to the method is an even
+     * number or not.
+     * return true if an even number, otherwise return false
+     * 
+     * @param number
+     * @return
+     */
+    public static boolean IsEvenNumber(int number) {
+
+        if (number % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
 }
