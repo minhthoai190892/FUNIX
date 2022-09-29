@@ -1,9 +1,11 @@
+import java.util.Scanner;
+
 // import java.util.Scanner;
 // import java.util.UUID;
 
 public class Funix {
     public static void main(String[] args) throws Exception {
-        //! System.out.println("========  =======");
+        // ! System.out.println("======== =======");
 
         // int myValue = 10000;
         // int myMinIntValue = Integer.MIN_VALUE;
@@ -237,21 +239,21 @@ public class Funix {
         // System.out.println(count);
         // count++;
         // } while (count != 10);
-        int number = 4;
-        int finisNumber = 20;
-        int evenNumbersFound = 0;
-        while (number <= finisNumber) {
-            number++;
-            if (!IsEvenNumber(number)) {
-                continue;
-            }
-            evenNumbersFound++;
-            if (evenNumbersFound >= 5) {
-                break;
-            }
-            System.out.println("Even number " + number);
-        }
-        System.out.println("Even Number Found " + evenNumbersFound);
+        // int number = 4;
+        // int finisNumber = 20;
+        // int evenNumbersFound = 0;
+        // while (number <= finisNumber) {
+        // number++;
+        // if (!IsEvenNumber(number)) {
+        // continue;
+        // }
+        // evenNumbersFound++;
+        // if (evenNumbersFound >= 5) {
+        // break;
+        // }
+        // System.out.println("Even number " + number);
+        // }
+        // System.out.println("Even Number Found " + evenNumbersFound);
         System.out.println("=============== 71. Parsing Values from a String =================");
         // String numberAsString = "2018";
         // System.out.println(numberAsString);
@@ -270,12 +272,23 @@ public class Funix {
         // old");
         // scanner.close();
 
-        
-
         System.out.println("======== 99. Arrays =======");
-        
+        // tao mang
+        // int[] myInArray = new int[10];
+        // int[] myInArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        // for (int i = 0; i < myInArray.length; i++) {
+        // myInArray[i] = i * 10;
+        // }
+        // for (int i = 0; i < 10; i++) {
+        // System.out.println(myInArray[i]);
+        // }
+        // printArray(myInArray);
+        int[] myIntegerArray = getIntegers(6);
+        for (int i = 0; i < myIntegerArray.length; i++) {
+            System.out.println("Element " + i + " typed value was " + myIntegerArray[i]);
+        }
+        System.out.println("The average is " + getAverage(myIntegerArray));
         System.out.println("=============== 141. Naming Conventions =================");
-
         //
         // UUID uuid = UUID.randomUUID();
         // System.out.println("UUID: " + uuid.toString());
@@ -485,4 +498,36 @@ public class Funix {
         }
 
     }
+
+    // System.out.println("======== 99. Arrays =======");
+    public static void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("Element " + i + "values is " + array[i]);
+        }
+    }
+
+    public static int[] getIntegers(int number) {
+
+        System.out.println("Enter " + number + " integer values. \r");
+        int[] values = new int[number];
+        for (int i = 0; i < values.length; i++) {
+            values[i] = scanner.nextInt();
+        }
+        return values;
+
+    }
+
+    public static double getAverage(int[] array) {
+        // tao bien sum de tinh tong
+        int sum = 0;
+        // duyet mang de lay tung phan tu va tinh tong
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i]; // lay bien sum cong moi lan lap cua array
+        }
+        return (double) (sum / array.length);
+
+    }
+
+    private static Scanner scanner = new Scanner(System.in);
+
 }
