@@ -126,7 +126,7 @@ public class App {
         } else {
             System.out.println("no");
         }
-       
+        // https://www.youtube.com/watch?v=hGxsRJYmsQs
         scanner.close();
         // System.out.println("Random Long: " + generator.nextLong());
         // System.out.println("Random Float: " + generator.nextFloat());
