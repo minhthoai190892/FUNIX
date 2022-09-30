@@ -48,8 +48,8 @@ public class lab5 {
         for (int i = 0; i < n; i++) { // duyệt mảng với i< "số lượng phần tử mảng"
             arr[i] = scanner.nextInt();// thêm vào mảng
         }
-        System.out.println(arr);
-        // System.out.print(sumOfArray(arr, n));
+        // System.out.println(arr);
+        System.out.print(sumOfArray(arr, n));
 
         scanner.close();
 

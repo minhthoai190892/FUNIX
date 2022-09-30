@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 // import java.util.Scanner;
@@ -272,7 +273,7 @@ public class Funix {
         // old");
         // scanner.close();
 
-        System.out.println("======== 99. Arrays =======");
+        System.out.println("=============== 99. Arrays ===============");
         // tao mang
         // int[] myInArray = new int[10];
         // int[] myInArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -283,11 +284,32 @@ public class Funix {
         // System.out.println(myInArray[i]);
         // }
         // printArray(myInArray);
-        int[] myIntegerArray = getIntegers(6);
-        for (int i = 0; i < myIntegerArray.length; i++) {
-            System.out.println("Element " + i + " typed value was " + myIntegerArray[i]);
-        }
-        System.out.println("The average is " + getAverage(myIntegerArray));
+        // int[] myIntegerArray = getIntegers(6);
+        // for (int i = 0; i < myIntegerArray.length; i++) {
+        // System.out.println("Element " + i + " typed value was " + myIntegerArray[i]);
+        // }
+        // System.out.println("The average is " + getAverage(myIntegerArray));
+        System.out.println("===============  102. References Types vs Value Types  ===============");
+        // int a = 10;
+        // int b = a;
+        // System.out.println("a = " + a);
+        // System.out.println("b = " + b);
+        // a++;
+        // System.out.println("a = " + a);
+        // System.out.println("b = " + b);
+        // int[] array1 = new int[5];
+        // int[] array2 = array1;
+        // System.out.println("array1 = " + Arrays.toString(array1));
+        // System.out.println("array2 = " + Arrays.toString(array2));
+        // array2[1]=10;
+        // System.out.println("array1 = " + Arrays.toString(array1));
+        // System.out.println("array2 = " + Arrays.toString(array2));
+        
+        System.out.println("======== 105. List and ArrayList Part 1 =======");
+            
+        // System.out.println("===============  ===============");
+        
+
         System.out.println("=============== 141. Naming Conventions =================");
         //
         // UUID uuid = UUID.randomUUID();
@@ -529,5 +551,7 @@ public class Funix {
     }
 
     private static Scanner scanner = new Scanner(System.in);
+    // System.out.println("======== 105. List and ArrayList Part 1 =======");
+
 
 }

@@ -2,7 +2,8 @@ package baitap.SortDescending;
 
 public class App {
     public static void main(String[] args) throws Exception {
-    SortDescending.getIntegers(5);
-    
+        int[] myIntegers = SortDescending.getIntegers(5);
+        int[] sorted = SortDescending.sortIntegers(myIntegers);
+        SortDescending.printArray(sorted);
     }
 }
