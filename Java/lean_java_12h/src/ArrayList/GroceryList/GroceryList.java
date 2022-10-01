@@ -38,7 +38,7 @@ public class GroceryList {
             return groceryList.get(position);
         }
 
-        return searchItem;
+        return null;
 
     }
 }
