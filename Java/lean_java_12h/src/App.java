@@ -117,7 +117,7 @@ public class App {
         // // double x = random.nextDouble();
         // System.out.println(x);
         // Random generator = new Random();
-        int code = (int) Math.floor(((Math.random() * 899999) + 100000));
+        int code = (int) Math.floor(((Math.random() * 899) + 100));
         System.out.println(code);
         Scanner scanner = new Scanner(System.in);
         int a = Integer.parseInt(scanner.nextLine());

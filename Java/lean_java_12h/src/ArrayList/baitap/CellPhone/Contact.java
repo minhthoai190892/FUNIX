@@ -5,6 +5,7 @@ public class Contact {
     private String name;
     private String phoneNumber;
 
+    // khởi tạo đối tượng
     public Contact(String name, String phoneNumber) {
         this.name = name;
         this.phoneNumber = phoneNumber;
@@ -33,6 +34,8 @@ public class Contact {
      * @return Object Contact
      */
     public static Contact createContact(String name, String phoneNumber) {
+        System.out.println(name);
+        System.out.println(phoneNumber);
         return new Contact(name, phoneNumber);
     }
 }
