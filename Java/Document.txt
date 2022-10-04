@@ -1,3 +1,33 @@
 https://www.youtube.com/watch?v=xk4_1vDrzzo
 thoainmFX17775@funix.edu.vn
 xxpC8JFjGgM2
+
+
+
+String[][] car2 = { { "001", "Ha NOi" }, { "002", "Ho Chi Minh" } };
+        String a = "002";
+        for (int i = 0; i < car2.length; i++) {
+            for (int j = 0; j < car2[i].length; j++) {
+                // System.out.print(car2[i][j]);
+                if (car2[i][j] == a) {
+                    System.out.print(car2[i][j + 1]);
+                }
+            }
+
+        }
+
+
+
+
+
+        // https://www.youtube.com/watch?v=hGxsRJYmsQs
+
+        int code = (int) Math.floor(((Math.random() * 899) + 100));
+        System.out.println(code);
+        Scanner scanner = new Scanner(System.in);
+        int a = Integer.parseInt(scanner.nextLine());
+        if (a == code) {
+            System.out.println("ok");
+        } else {
+            System.out.println("no");
+        }

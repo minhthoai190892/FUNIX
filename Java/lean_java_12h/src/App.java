@@ -120,12 +120,19 @@ public class App {
         int code = (int) Math.floor(((Math.random() * 899) + 100));
         System.out.println(code);
         Scanner scanner = new Scanner(System.in);
-        int a = Integer.parseInt(scanner.nextLine());
-        if (a == code) {
-            System.out.println("ok");
-        } else {
-            System.out.println("no");
+        // System.out.print("nhap code: ");
+        // int a = Integer.parseInt(scanner.nextLine());
+        boolean flag = true;
+        while (flag) {
+            System.out.print("nhap code: ");
+           int a = Integer.parseInt(scanner.nextLine());
+            if (a == code) {
+                System.out.println("ok");
+                flag = true;
+            }
+            flag = false;
         }
+
         // https://www.youtube.com/watch?v=hGxsRJYmsQs
         scanner.close();
         // System.out.println("Random Long: " + generator.nextLong());
