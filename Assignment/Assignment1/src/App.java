@@ -22,34 +22,17 @@ public class App {
                     flag = true;
                     break;
                 case 1:
-
-                    // System.out.print("Enter cccd ");
-                    // String cccd = scanner.nextLine();
-
                     String cccd = "";
-                    scanner.nextLine();
-                    // boolean flag1 = false;
-
-                    // while (flag1) {
-                    // if (cccd.length() != 2) {
-                    // System.out.print("Enter cccd ");
-                    // cccd = scanner.nextLine();
-                    // System.out.println("CCCD phai du 2 so");
-                    // flag = true;
-                    // }
-                    // // flag1 = false;
-                    // }
+                    scanner.nextLine();          
                     while (cccd.length() != 2) {
                         System.out.print("Enter cccd ");
                         cccd = scanner.nextLine();
                         System.out.println("CCCD phai du 2 so");
                     }
-
                     System.out.println("Cccd la " + cccd);
                     break;
                 default:
                     System.out.println("Nhap sai vui long nhap lai");
-
                     break;
             }
         }
