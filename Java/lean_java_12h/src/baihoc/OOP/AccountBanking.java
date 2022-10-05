@@ -9,6 +9,22 @@ public class AccountBanking {
     private String customerEmailAddress;
     private String customerPhoneNumber;
 
+    public AccountBanking(String number, double blance, String accountName,
+            String customerEmailAddress, String customerPhoneNumber) {
+        System.out.println("Account constructor with parameters called");
+        this.number = number;
+        this.blance = blance;
+        this.accountName = accountName;
+        this.customerEmailAddress = customerEmailAddress;
+        this.customerPhoneNumber = customerPhoneNumber;
+    }
+
+  
+
+    // public AccountBanking() {
+    // System.out.println("Empty constructor called");
+    // }
+
     /**
      * 
      * @param depositAmount amount deposited by the user
@@ -25,7 +41,7 @@ public class AccountBanking {
      *                         return the amount in the bank
      */
     public void withdrawal(double withdrawalAmount) {
-        //check if the amount in the account is less than the withdrawal amount
+        // check if the amount in the account is less than the withdrawal amount
         if (this.blance - withdrawalAmount < 0) {
             System.out.println("Only " + this.blance + " available. Withdrawal not processed");
         } else {
