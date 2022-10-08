@@ -10,11 +10,11 @@ public class App {
         System.out.println("+--------+------------------------------+--------+");
         Scanner scanner = new Scanner(System.in);
         boolean flag = false;
-
+        scanner.close();
         while (true) {
             System.out.print("Chuc nang: ");
             int n = scanner.nextInt();
-            if (n==0) {
+            if (n == 0) {
                 System.out.println("Asd");
             }
         }
