@@ -1,4 +1,4 @@
-package baihoc.OOP.CarpetCostCalculator;
+package OOP.CarpetCostCalculator;
 
 public class Carpet {
     private double cost;

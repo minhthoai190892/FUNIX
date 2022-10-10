@@ -1,4 +1,4 @@
-package baihoc.OOP;
+package OOP;
 
 public class App {
     public static void main(String[] args) throws Exception {

@@ -1,4 +1,4 @@
-package baihoc.OOP.CarpetCostCalculator;
+package OOP.CarpetCostCalculator;
 
 public class App {
     public static void main(String[] args) throws Exception {

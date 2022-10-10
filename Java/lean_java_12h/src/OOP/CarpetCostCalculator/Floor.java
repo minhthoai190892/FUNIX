@@ -1,4 +1,4 @@
-package baihoc.OOP.CarpetCostCalculator;
+package OOP.CarpetCostCalculator;
 
 /**
  * The Carpet Company has asked you to write an application that calculates the

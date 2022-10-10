@@ -1,4 +1,4 @@
-package baihoc.OOP;
+package OOP;
 
 /**
  * A complex number is a number that can be expressed in the form a + bi, where

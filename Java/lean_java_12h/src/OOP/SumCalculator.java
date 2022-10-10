@@ -1,4 +1,4 @@
-package baihoc.OOP;
+package OOP;
 
 public class SumCalculator {
     private double firstNumber;

@@ -1,4 +1,4 @@
-package baihoc.OOP;
+package OOP;
 
 public class ClassesPart1_Car {
     private int doors;

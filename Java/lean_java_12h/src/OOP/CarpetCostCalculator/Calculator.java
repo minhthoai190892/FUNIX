@@ -1,4 +1,4 @@
-package baihoc.OOP.CarpetCostCalculator;
+package OOP.CarpetCostCalculator;
 
 /**
  * 3. Write a class with the name Calculator. The class needs two fields

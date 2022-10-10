@@ -1,4 +1,4 @@
-package baihoc.OOP;
+package OOP;
 
 public class WallArea {
     private double width;
