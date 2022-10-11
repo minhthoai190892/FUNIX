@@ -1,4 +1,4 @@
-package lab.labOOP;
+package lab.lab8OOP;
 
 public class Lab8 {
     public static void main(String[] args) {

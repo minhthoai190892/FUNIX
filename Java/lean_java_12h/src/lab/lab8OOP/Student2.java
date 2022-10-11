@@ -1,4 +1,4 @@
-package lab.labOOP;
+package lab.lab8OOP;
 
 public class Student2 {
     private String name;

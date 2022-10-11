@@ -1,4 +1,4 @@
-package lab.labOOP;
+package lab.lab8OOP;
 
 import java.util.Scanner;
 
