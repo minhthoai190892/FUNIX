@@ -1,18 +1,21 @@
-package ArrayList.baitap.CellPhone;
+package ArrayList.baitap.Phone;
 
 public class Contact {
-
+    // khai báo field
     private String name;
     private String phoneNumber;
 
-    // khởi tạo đối tượng
+    // tạo contructor
     public Contact(String name, String phoneNumber) {
         this.name = name;
         this.phoneNumber = phoneNumber;
     }
+    // tạo contructor
+
+    // getter and setter
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public void setName(String name) {
@@ -20,22 +23,18 @@ public class Contact {
     }
 
     public String getPhoneNumber() {
-        return this.phoneNumber;
+        return phoneNumber;
     }
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    /**
-     * 
-     * @param name
-     * @param phoneNumber
-     * @return Object Contact
-     */
+    // getter and setter
+
     public static Contact createContact(String name, String phoneNumber) {
-        System.out.println(name);
-        System.out.println(phoneNumber);
+
         return new Contact(name, phoneNumber);
+
     }
 }
