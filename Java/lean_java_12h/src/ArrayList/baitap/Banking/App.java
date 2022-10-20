@@ -22,6 +22,13 @@ public class App {
         if (!bank.addCustomerTransaction("Adelaide", "Tim", 100.10)) {
             System.out.println("asdqwe");
         }
-        bank.listCustomers("Adelaide", true);
+
+        bank.addBranch("Melboure");
+        if (!bank.addCustomer("Melboure", "Brain", 10000)) {
+          System.out.println("Error Melboure branch dose not exist");
+        }
+
+
+        bank.listCustomers("Melboure", true);
     }
 }
