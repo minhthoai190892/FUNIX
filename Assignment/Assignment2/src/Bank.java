@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 public class Bank {
+
     private String id;
     private ArrayList<Customer> customers;
 
@@ -53,24 +54,33 @@ public class Bank {
     }
 
     public void display() {
-        /*
-         * for (int i = 0; i < customersList.size(); i++) {
-         * System.out.println(customersList.get(i).getCustomerId());
-         * for (int j = 0; j < customersList.get(i).getAccounts().size(); j++) {
-         * System.out.println(customersList.get(i).getAccounts().get(j).getAccountNumber
-         * ()
-         * + " -> "
-         * + customersList.get(i).getAccounts().get(j).getBalance());
-         * sum += customersList.get(i).getAccounts().get(j).getBalance();
-         * 
-         * }
-         */
+        Customer customer;
+
         for (int i = 0; i < customers.size(); i++) {
-            System.out.println(customers.get(i).getCustomerId());
-            for (int j = 0; j < customers.get(i).getAccounts().size(); j++) {
-                System.out.println(customers.get(i).getAccounts().get(j).getAccountNumber() + " -> "
-                        + customers.get(i).getAccounts().get(j).getBalance());
+            customer = customers.get(i);
+            customer.displayInformation();
+        }
+
+    }
+
+    public Customer searchCustomerId(String customerId) {
+        return findCustomer(customerId);
+    }
+
+    public Customer searchCustomerName(String name) {
+        return findCustomerName(name);
+    }
+
+    private Customer findCustomerName(String customerName) {
+        
+        for (int i = 0; i < this.customers.size(); i++) {
+            Customer checkCustomer = this.customers.get(i);
+            // name.matches("(.*)" + textString + "(.*)")
+            if (checkCustomer.getName().contains(customerName)) {
+                return checkCustomer;
             }
         }
+        return null;
     }
+
 }

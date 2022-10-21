@@ -23,12 +23,12 @@ public class App {
             System.out.println("asdqwe");
         }
 
-        bank.addBranch("Melboure");
-        if (!bank.addCustomer("Melboure", "Brain", 10000)) {
-          System.out.println("Error Melboure branch dose not exist");
-        }
+        // bank.addBranch("Melboure");
+        // if (!bank.addCustomer("Melboure", "Brain", 10000)) {
+        //   System.out.println("Error Melboure branch dose not exist");
+        // }
 
 
-        bank.listCustomers("Melboure", true);
+        bank.listCustomers("Adelaide", true);
     }
 }

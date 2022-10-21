@@ -1,3 +1,4 @@
+import java.sql.Blob;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -79,22 +80,41 @@ public class test {
         // System.out.println("sum is " + sum);
 
         // // 001123123132
-        Bank bank = new Bank();
-        bank.addCustomer("Thoai", "001123123132");
-        bank.addCustomer("Thoai", "001123233132");
-        bank.addAccount("001123123132", "123123  ", 10000);
-        bank.addAccount("001123125532", "123133  ", 20000);
-        if (!bank.addCustomer("Thoai", "002223123132")) {
-            System.out.println("Customer da ton tai");
-        } else {
-            System.out.println("Them customer");
+        // Bank bank = new Bank();
+        // bank.addCustomer("Thoai", "0011232222123132");
+        // bank.addCustomer("Thoai", "001123233132");
+        // bank.addAccount("0011232222123132", "123123 ", 10000);
+        // bank.addAccount("001123123132", "123133 ", 20000);
+        // bank.addAccount("001123233132", "123133 ", 20000);
+        // bank.addAccount("001123233132", "123133 ", 20000);
+        // // if (!bank.addCustomer("Thoai", "002223123132")) {
+        // System.out.println("Customer da ton tai");
+        // } else {
+        // System.out.println("Them customer");
+        // }
+        // if (bank.addAccount("001123123132", "123123 ", 10000)) {
+        // System.out.println("Acount da ton tai");
+        // } else {
+        // System.out.println("Them account");
+        // }
+        // bank.display();
+        // System.out.println("======");
+        // Customer customer = new Customer("Thoai", "001123123132");
+        // customer.addAccount("123123", 9000000);
+        // customer.addAccount("123133", 1000000);
+        // customer.addAccount("123153", 1000000);
+        // Customer customer2 = new Customer("Thoai", "001123123132");
+        // customer2.addAccount("123123", 2000000);
+        // customer2.addAccount("123133", 1000000);
+        // customer2.addAccount("123153", 1000000);
+        // customer.displayInformation();
+        String name = "Coding reiver";
+        Scanner scanner = new Scanner(System.in);
+        String textString = scanner.nextLine();
+        if (name.matches("(.*)" + textString + "(.*)")) {
+            System.out.println(name);
+        }else{
+            System.out.println("khongn tim thay");
         }
-        if (bank.addAccount("001123123132", "123123  ", 10000)) {
-            System.out.println("Acount da ton tai");
-        } else {
-            System.out.println("Them account");
-        }
-        bank.display();
-        System.out.println(bank.getId());
     }
 }

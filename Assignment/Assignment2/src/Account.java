@@ -1,13 +1,10 @@
 import java.text.NumberFormat;
-import java.util.ArrayList;
 import java.util.Locale;
 
 public class Account {
     private String accountNumber;
     private double balance;
 
-
-    
     public Account(String accountNumber, double balance) {
         this.accountNumber = accountNumber;
         this.balance = balance;
@@ -37,18 +34,11 @@ public class Account {
         }
     }
 
-    // @Override
-    // public String toString() {
-
-    // String info = accountNumber + " | " + (isPremium()==true?"isPremiun":"") +
-    // "\t" + balance + " d";
-    // return info;
-    // }
     public void display() {
         Locale localeEN = new Locale("en", "EN");
         NumberFormat en = NumberFormat.getInstance(localeEN);
         String stringBalance = en.format(balance);
         System.out
-                .println(accountNumber + " | " + (isPremium() == true ? "isPremiun" : "") + "\t" + stringBalance + "d");
+                .println(accountNumber + " | " + "\t" + stringBalance + "d");
     }
 }
