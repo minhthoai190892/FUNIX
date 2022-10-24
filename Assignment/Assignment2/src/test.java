@@ -108,13 +108,93 @@ public class test {
         // customer2.addAccount("123133", 1000000);
         // customer2.addAccount("123153", 1000000);
         // customer.displayInformation();
-        String name = "Coding reiver";
-        Scanner scanner = new Scanner(System.in);
-        String textString = scanner.nextLine();
-        if (name.matches("(.*)" + textString + "(.*)")) {
-            System.out.println(name);
-        }else{
-            System.out.println("khongn tim thay");
-        }
+        // String name = "Coding reiver";
+        // Scanner scanner = new Scanner(System.in);
+        // String textString = scanner.nextLine();
+        // if (name.matches("(.*)" + textString + "(.*)")) {
+        //     System.out.println(name);
+        // }else{
+        //     System.out.println("khongn tim thay");
+        // }
+        // var p1 = new Person(34, "Michael", Gender.MALE);
+        // var p2 = new Person(17, "Jane", Gender.FEMALE);
+        // var p3 = new Person(28, "John", Gender.MALE);
+        // var p4 = new Person(47, "Peter", Gender.MALE);
+        // var p5 = new Person(27, "Lucy", Gender.FEMALE);
+        
+        // var persons = ArrayListList.of(p1, p2, p3, p4, p5);
+        
+        // var result = new ArrayList<Person>();
+        
+        // for (Person person: persons) {
+            
+            //     if (person.getAge() > 30) {
+                
+                //         result.add(person);
+        //     }
+        // }
+
+        // System.out.println(result);
+  
+    }
+    enum Gender {
+        MALE, FEMALE
+    }
+public class Person {
+
+    private int age;
+    private String name;
+    private Gender sex;
+
+    public Person(int age, String name, Gender sex) {
+
+        this.age = age;
+        this.name = name;
+        this.sex = sex;
+    }
+
+    public int getAge() {
+
+        return age;
+    }
+
+    public void setAge(int age) {
+
+        this.age = age;
+    }
+
+    public String getName() {
+
+        return name;
+    }
+
+    public void setName(String name) {
+
+        this.name = name;
+    }
+
+    public Gender getSex() {
+
+        return sex;
+    }
+
+    public void setSex(Gender sex) {
+
+        this.sex = sex;
+    }
+
+    @Override
+    public String toString() {
+
+        final StringBuilder sb = new StringBuilder("Person{");
+
+        sb.append("age=").append(age);
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", sex=").append(sex);
+        sb.append('}');
+
+        return sb.toString();
     }
 }
+}
+

@@ -20,6 +20,12 @@ public class Bedroom {
         this.bed = bed;
         this.lamp = lamp;
     }
+    public Bed getBed() {
+        return bed;
+    }
+    public void setBed(Bed bed) {
+        this.bed = bed;
+    }
     public Lamp getLamp(){
         return this.lamp;
     }

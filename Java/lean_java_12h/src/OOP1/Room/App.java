@@ -12,5 +12,6 @@ public class App {
         Bedroom bedroom = new Bedroom("Tims", wall1, wall2, wall3, wall4, ceiling, bed, lamp);
         bedroom.makeBed();
         bedroom.getLamp().turnOn();
+        bedroom.getBed().make();
     }
 }

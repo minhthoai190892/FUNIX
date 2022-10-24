@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=xk4_1vDrzzo
 thoainmFX17775@funix.edu.vn
-xxpC8JFjGgM2
+
 
 
 
@@ -30,3 +30,36 @@ String[][] car2 = { { "001", "Ha NOi" }, { "002", "Ho Chi Minh" } };
         } else {
             System.out.println("no");
         }
+
+
+
+
+
+
+
+
+
+        ĐƠN XIN KÉO DÀI THÊM KHÓA HỌC 
+Kính gửi: Phòng đào tạo Funix
+
+Tên học viên: 
+Hiện đang học khóa CCDN. 
+Mã số học viên: 
+Em viết mail này xin phép được gia hạn khóa  học thêm ......... tuần nữa để có thể hoàn thành được việc học tại Funix
+Lý do: 
+Sau khi đã trao đổi với Hannah, em đã xây dựng kế hoạch học tập mới:
+
+PRO192x_03-A_VN : ngày kết thúc ....... 
+CSD201x_02-A_VN_DN : ngày bắt đầu ........... - ngày kết thúc ..................
+DBI202x_2.1-A_VN_DN: ngày bắt đầu ........... - ngày kết thúc ..................
+PRJ321x_02_VN: ngày bắt đầu ........... - ngày kết thúc ..................
+
+Em rất mong Funix xem xét và tạo điều kiện cho em ạ.
+Xin chân thành cảm ơn!
+Khoa Nguyễn
+Thời gian học của em là tới ngày 18-thg 12-22. Giờ em muốn xin thêm bao nhiêu thời gian học nữa thì cộng thêm vào. Sau đó em phân bổ thời gian học ra cho các môn ở trên
+Khoa Nguyễn
+Em điền thêm cả lý do vào nữa
+Khoa Nguyễn
+Hannah Khoa Nguyễn
+Sau đó gửi lại chị xem rồi mới gửi nhé.

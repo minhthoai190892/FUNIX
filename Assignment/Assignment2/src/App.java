@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -6,6 +7,10 @@ public class App {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
+        bank.addCustomer("thoai", "001123456789");
+        bank.addCustomer("thoai1", "00112345677");
+        bank.addCustomer("thanh", "001123456788");
+        bank.addCustomer("doan", "001123456786");
         printMenu();
         boolean flag = false;
         while (!flag) {
@@ -42,13 +47,14 @@ public class App {
 
     private static void searchForName() {
         System.out.print("Nhap ten khach hang: ");
-        String name = scanner.nextLine();
-        Customer customer = bank.searchCustomerName(name);
-        if (customer == null) {
-            System.out.println("khong tim thay");
-            return;
-        }
-        customer.displayInformation();
+        String name = scanner.nextLine().toUpperCase();
+        // Customer customer = bank.searchCustomerName(name);
+
+        // if (customer == null) {
+        // System.out.println("khong tim thay");
+        // return;
+        // }
+        bank.searchCustomerByName(name);
 
     }
 
@@ -65,26 +71,52 @@ public class App {
     }
 
     private static void addAccount() {
-        // boolean checkAccount = false;
+        boolean checkAccount = false;
 
         System.out.print("Nhap CCCD khach hang: ");
         String customerId = "";
+
         customerId = scanner.nextLine();
-        System.out.print("Nhap ma STK gom 6 so: ");
-        String accountNumber = scanner.nextLine();
-        System.out.print("Nhap so du: ");
-        double balance = scanner.nextDouble();
-        scanner.nextLine();
+        String accountNumber = "";
+        double balance = 0;
+        while (!checkAccount) {
+            System.out.print("Nhap ma STK gom 6 so: ");
+            accountNumber = scanner.nextLine();
+            Pattern pattern = Pattern.compile("^[0-9]{6}");
+            if (pattern.matcher(accountNumber).find() && accountNumber.length() == 6) {
+                while (!checkAccount) {
+                    System.out.print("Nhap so du: ");
+                    balance = scanner.nextDouble();
+                    if (balance >= 50000) {
+
+                        checkAccount = true;
+                    } else {
+                        System.out.println("Nhap so du phai lon hon 50000");
+                        checkAccount = false;
+                    }
+                }
+                checkAccount = true;
+            } else {
+                System.out.println("So tai khoan phai la so");
+                checkAccount = false;
+            }
+        }
+
+        // scanner.nextLine();
+
         if (!bank.addAccount(customerId, accountNumber, balance)) {
-            System.out.println("khach hang khong ton tai");
-            // checkAccount = true;
+
+            System.out.println("khach hang khong ton tai hoac tai khoan da ton tai");
+
+        } else {
+            System.out.println("Them tai khoan thanh cong");
         }
     }
 
     private static void addCustomer() {
         // 001123456789
         System.out.print("Nhap ten khach hang: ");
-        String customerName = scanner.nextLine();
+        String customerName = scanner.nextLine().toUpperCase();
         boolean checkCustomer = false;
         String customerId = "";
         while (!checkCustomer) {
@@ -95,7 +127,7 @@ public class App {
                 if (bank.addCustomer(customerName, customerId)) {
                     System.out.println("Them " + customerId + " thanh cong");
                 } else {
-                    System.out.println("Them " + customerId + " that bai or da ton tai " );
+                    System.out.println("Them " + customerId + " that bai hoac da ton tai ");
                 }
                 checkCustomer = true;
             } else {
