@@ -7,16 +7,25 @@ public class App {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-        bank.addCustomer("thoai", "001123456789");
-        bank.addCustomer("thoai1", "00112345677");
-        bank.addCustomer("thanh", "001123456788");
-        bank.addCustomer("doan", "001123456786");
+        bank.addCustomer("THOAI", "001123456789");
+        bank.addCustomer("THOAI1", "00112345677");
+        bank.addCustomer("THANH", "001123456788");
+        bank.addCustomer("DOAN", "001123456786");
         printMenu();
         boolean flag = false;
         while (!flag) {
+            int choice;
             System.out.print("Chuc nang: ");
-            int choice = scanner.nextInt();
+            //! kiểm tra người dùng có nhập số không
+            while (!scanner.hasNextInt()) {
+                String input = scanner.next();
+                System.out.printf("\"%s\" phải là số.%n", input);
+                System.out.println("Nhap sai vui long nhap lai");
+                System.out.print("Chuc nang: ");
+            }
+            choice = scanner.nextInt();
             scanner.nextLine();
+
             switch (choice) {
                 case 1:
                     System.out.println("Chuc nang so 1");
@@ -40,6 +49,7 @@ public class App {
                     searchForName();
                     break;
                 default:
+                    System.out.println("Nhap sai vui long nhap");
                     break;
             }
         }
@@ -48,14 +58,7 @@ public class App {
     private static void searchForName() {
         System.out.print("Nhap ten khach hang: ");
         String name = scanner.nextLine().toUpperCase();
-        // Customer customer = bank.searchCustomerName(name);
-
-        // if (customer == null) {
-        // System.out.println("khong tim thay");
-        // return;
-        // }
         bank.searchCustomerByName(name);
-
     }
 
     private static void searchForCCCD() {
@@ -67,7 +70,6 @@ public class App {
             return;
         }
         customer.displayInformation();
-
     }
 
     private static void addAccount() {
@@ -82,13 +84,21 @@ public class App {
         while (!checkAccount) {
             System.out.print("Nhap ma STK gom 6 so: ");
             accountNumber = scanner.nextLine();
+            //! chỉ cho phép nhập số và có độ dài bằng 6
             Pattern pattern = Pattern.compile("^[0-9]{6}");
             if (pattern.matcher(accountNumber).find() && accountNumber.length() == 6) {
                 while (!checkAccount) {
+                    
                     System.out.print("Nhap so du: ");
+                    while (!scanner.hasNextDouble()) {
+                        String input = scanner.next();
+                        System.out.printf("\"%s\" phải là số.%n", input);
+                        System.out.println("Nhap sai vui long nhap lai");
+                        System.out.print("Nhap so du: ");
+                    }
                     balance = scanner.nextDouble();
-                    if (balance >= 50000) {
 
+                    if (balance >= 50000) {
                         checkAccount = true;
                     } else {
                         System.out.println("Nhap so du phai lon hon 50000");
@@ -101,9 +111,7 @@ public class App {
                 checkAccount = false;
             }
         }
-
-        // scanner.nextLine();
-
+        //kiểm tra xem có đúng "Customer" không và "Account" đã tồn tại chưa
         if (!bank.addAccount(customerId, accountNumber, balance)) {
 
             System.out.println("khach hang khong ton tai hoac tai khoan da ton tai");
@@ -124,6 +132,7 @@ public class App {
             customerId = scanner.nextLine();
             Pattern pattern = Pattern.compile("^[0][0-9]{11}");
             if (pattern.matcher(customerId).find() && customerId.length() == 12) {
+                //kiểm tra xem "Customer" đã có chưa
                 if (bank.addCustomer(customerName, customerId)) {
                     System.out.println("Them " + customerId + " thanh cong");
                 } else {

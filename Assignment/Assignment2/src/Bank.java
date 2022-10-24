@@ -47,7 +47,7 @@ public class Bank {
     }
 
     /**
-     * Hàm tạo tài khoản
+     * Hàm tạo "Account" khoản khi đã có "Customer"
      * 
      * @param customerId
      * @param accountNumber
@@ -56,7 +56,9 @@ public class Bank {
      */
     public boolean addAccount(String customerId, String accountNumber, double balance) {
         Customer customer = findCustomer(customerId);
-        if (customer != null) {
+        // kiểm tra xem "Customer" có tồn tại không
+        if (customer != null) {// => Customer
+            // gọi hàm "addAccount" của "Account" để tạo tài khoản
             return customer.addAccount(accountNumber, balance);
         }
         return false;
@@ -65,19 +67,22 @@ public class Bank {
     /**
      * Hàm tìm khách hàng
      * 
-     * @param customerName
+     * @param customerId
      * @return Customer
      */
-    private Customer findCustomer(String customerName) {
+    private Customer findCustomer(String customerId) {
         for (int i = 0; i < this.customers.size(); i++) {
             Customer checkCustomer = this.customers.get(i);
-            if (checkCustomer.getCustomerId().equals(customerName)) {
+            if (checkCustomer.getCustomerId().equals(customerId)) {
                 return checkCustomer;
             }
         }
         return null;
     }
 
+    /*
+     * Hàm hiển thị tất cả các "Account" của "Customer"
+     */
     public void display() {
         Customer customer;
 
@@ -88,24 +93,24 @@ public class Bank {
 
     }
 
+    /**
+     * Hàm tìm kiếm bằng "customerId"
+     * 
+     * @param customerId
+     * @return Customer
+     */
     public Customer searchCustomerId(String customerId) {
         return findCustomer(customerId);
     }
-
-    public void name(String name) {
-        for (int i = 0; i < this.customers.size(); i++) {
-            ArrayList<Customer> customersList = new ArrayList<>();
-            customersList.add(findCustomer(name));
-            System.out.println(customersList.get(i).getName());
-        }
-    }
-
+/**
+ * Hàm tìm kiếm khách hàng bằng "customerName"
+ * @param customerName
+ * hiển thị thông tin của "Customer"
+ */
     public void searchCustomerByName(String customerName) {
         for (int i = 0; i < this.customers.size(); i++) {
             Customer checkCustomer = this.customers.get(i);
-            // name.matches("(.*)" + textString + "(.*)")
             if (checkCustomer.getName().contains(customerName)) {
-                // System.out.println(checkCustomer.getName());
                 checkCustomer.displayInformation();
             }
         }
