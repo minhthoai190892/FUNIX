@@ -16,7 +16,7 @@ public class App {
         while (!flag) {
             int choice;
             System.out.print("Chuc nang: ");
-            //! kiểm tra người dùng có nhập số không
+            // ! kiểm tra người dùng có nhập số không
             while (!scanner.hasNextInt()) {
                 String input = scanner.next();
                 System.out.printf("\"%s\" phải là số.%n", input);
@@ -47,6 +47,9 @@ public class App {
                 case 5:
                     System.out.println("Chuc nang so 5");
                     searchForName();
+                    break;
+                case 6:
+                    flag = true;
                     break;
                 default:
                     System.out.println("Nhap sai vui long nhap");
@@ -84,11 +87,11 @@ public class App {
         while (!checkAccount) {
             System.out.print("Nhap ma STK gom 6 so: ");
             accountNumber = scanner.nextLine();
-            //! chỉ cho phép nhập số và có độ dài bằng 6
+            // ! chỉ cho phép nhập số và có độ dài bằng 6
             Pattern pattern = Pattern.compile("^[0-9]{6}");
             if (pattern.matcher(accountNumber).find() && accountNumber.length() == 6) {
                 while (!checkAccount) {
-                    
+
                     System.out.print("Nhap so du: ");
                     while (!scanner.hasNextDouble()) {
                         String input = scanner.next();
@@ -111,7 +114,7 @@ public class App {
                 checkAccount = false;
             }
         }
-        //kiểm tra xem có đúng "Customer" không và "Account" đã tồn tại chưa
+        // kiểm tra xem có đúng "Customer" không và "Account" đã tồn tại chưa
         if (!bank.addAccount(customerId, accountNumber, balance)) {
 
             System.out.println("khach hang khong ton tai hoac tai khoan da ton tai");
@@ -132,7 +135,7 @@ public class App {
             customerId = scanner.nextLine();
             Pattern pattern = Pattern.compile("^[0][0-9]{11}");
             if (pattern.matcher(customerId).find() && customerId.length() == 12) {
-                //kiểm tra xem "Customer" đã có chưa
+                // kiểm tra xem "Customer" đã có chưa
                 if (bank.addCustomer(customerName, customerId)) {
                     System.out.println("Them " + customerId + " thanh cong");
                 } else {
@@ -156,6 +159,7 @@ public class App {
         System.out.println(" 3. Hien thi danh sach khach hang");
         System.out.println(" 4. Tim theo CCCD");
         System.out.println(" 5. Tim theo ten khach hang");
+        System.out.println(" 6. Thoat ");
         System.out.println("+-------------------------------------------+");
 
     }
