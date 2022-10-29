@@ -115,13 +115,13 @@ public class App {
             }
         }
         // kiểm tra xem có đúng "Customer" không và "Account" đã tồn tại chưa
-        if (!bank.addAccount(customerId, accountNumber, balance)) {
+        // if (!bank.addAccount(customerId, accountNumber, balance)) {
 
-            System.out.println("khach hang khong ton tai hoac tai khoan da ton tai");
+        //     System.out.println("khach hang khong ton tai hoac tai khoan da ton tai");
 
-        } else {
-            System.out.println("Them tai khoan thanh cong");
-        }
+        // } else {
+        //     System.out.println("Them tai khoan thanh cong");
+        // }
     }
 
     private static void addCustomer() {

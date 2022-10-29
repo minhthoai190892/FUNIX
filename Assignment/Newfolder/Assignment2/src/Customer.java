@@ -2,7 +2,7 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class Customer extends User {
+public abstract class Customer extends User {
     ArrayList<Account> accounts;
 
     /**
@@ -28,16 +28,27 @@ public class Customer extends User {
      * Hàm tạo "Account"
      * Nếu "true" thì tạo "Account". "False" thì không tạo "Accout"
      * 
-     * @param newAccount
+     * @param accountNumber
      * @param balance
      * @return true/false
      */
-    public boolean addAccount(String newAccount, double balance) {
-        // kiểm tra xem "newAccount" có tồn tại trong "ArrayList" không
-        if (findAccount(newAccount) == null) {
-            // nếu "newAccount" chưa có ta sử dụng phương thức "add" để tạo mới một
+    public boolean addSavingsAccount(String accountNumber, double balance, String accountName) {
+        // kiểm tra xem "accountNumber" có tồn tại trong "ArrayList" không
+        if (findAccount(accountNumber) == null) {
+            // nếu "accountNumber" chưa có ta sử dụng phương thức "add" để tạo mới một
             // "Account"
-            accounts.add(new Account(newAccount, balance));
+            accounts.add(new SavingsAccount(accountNumber, balance, accountName));
+            return true;
+        }
+        return false;
+    }
+
+    public boolean addLoanAccount(String accountNumber, double balance, String accountName) {
+        // kiểm tra xem "accountNumber" có tồn tại trong "ArrayList" không
+        if (findAccount(accountNumber) == null) {
+            // nếu "accountNumber" chưa có ta sử dụng phương thức "add" để tạo mới một
+            // "Account"
+            accounts.add(new LoanAccount(accountNumber, balance, accountName));
             return true;
         }
         return false;
@@ -46,15 +57,15 @@ public class Customer extends User {
     /**
      * Hàm tìm "Acount"
      * 
-     * @param newAccount
+     * @param accountNumber
      * @return "Account"
      */
-    private Account findAccount(String newAccount) {
+    public Account findAccount(String accountNumber) {
         // duyệt qua mảng "accounts"
         for (int i = 0; i < this.accounts.size(); i++) {
             Account checkAccount = this.accounts.get(i);
-            // kiểm tra trong mảng xem có "newAccount" chưa
-            if (checkAccount.getAccountNumber().equals(newAccount)) {
+            // kiểm tra trong mảng xem có "accountNumber" chưa
+            if (checkAccount.getAccountNumber().equals(accountNumber)) {
                 return checkAccount;
             }
         }
@@ -96,18 +107,22 @@ public class Customer extends User {
      */
     public void displayInformation() {
         String checkIsPremium = isPremium();
-        //định dạng hiển thị
+        // định dạng hiển thị
         Locale localeEN = new Locale("en", "EN");
         NumberFormat en = NumberFormat.getInstance(localeEN);
 
         String stringBalance = en.format(getBalance());
-        //hiển thị thông tin khách hàng
-        System.out.printf("%-15s|%15s|%-15s|%sd \n", getCustomerId(), getName(), checkIsPremium, stringBalance);
-        //hiển thị tất cả tài khoản khách hàng đó có
+        // hiển thị thông tin khách hàng
+        System.out.printf("%-12s|%18s |%15s|%sd \n", getCustomerId(), getName(), checkIsPremium, stringBalance);
+        // hiển thị tất cả tài khoản khách hàng đó có
         for (int i = 0; i < accounts.size(); i++) {
-            System.out.printf("%-5s  %-40s %sd \n", i + 1, accounts.get(i).getAccountNumber(),
+            System.out.printf("%s %10s  %17s | %25sd \n", i + 1, accounts.get(i).getAccountNumber(),accounts.get(i).getAccountName(),
                     en.format(accounts.get(i).getBalance()));
+
         }
     }
+
+    public abstract void withdrawSavingsAccount(String accountNumber, double amount);
+    public abstract void withdrawLoanAccount(String accountNumber, double amount);
 
 }

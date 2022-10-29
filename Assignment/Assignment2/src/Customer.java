@@ -51,7 +51,7 @@ public class Customer extends User {
      * @param newAccount
      * @return "Account"
      */
-    private Account findAccount(String newAccount) {
+    public Account findAccount(String newAccount) {
         // duyệt qua mảng "accounts"
         for (int i = 0; i < this.accounts.size(); i++) {
             Account checkAccount = this.accounts.get(i);
@@ -112,4 +112,94 @@ public class Customer extends User {
         }
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    // public boolean addSavingsAccount(String accountNumber, double balance, String accountName) {
+    //     // kiểm tra xem "newAccount" có tồn tại trong "ArrayList" không
+    //     if (findAccount(accountNumber) == null) {
+    //         // nếu "newAccount" chưa có ta sử dụng phương thức "add" để tạo mới một
+    //         // "Account"
+
+    //         accounts.add(new SavingAccount(accountNumber, balance, accountName));
+
+    //         return true;
+    //     }
+    //     return false;
+    // }
+
+    // public boolean addLoanAccount(String accountNumber, double balance, String accountName) {
+    //     // kiểm tra xem "newAccount" có tồn tại trong "ArrayList" không
+    //     if (findAccount(accountNumber) == null) {
+    //         // nếu "newAccount" chưa có ta sử dụng phương thức "add" để tạo mới một
+    //         // "Account"
+
+    //         accounts.add(new LoanAccount(accountNumber, balance, accountName));
+
+    //         return true;
+    //     }
+    //     return false;
+    // }
+
+    // public void withdrawSaving(String accountNumber, double amount) {
+
+    //     Account account = findAccount(accountNumber);
+
+    //     if (findAccount(accountNumber) != null) {
+    //         ((SavingAccount) account).withdraw(amount);
+    //         ((SavingAccount) account).log(amount);
+    //     }
+    // }
+
+    // public void withdrawLoan(String accountNumber, double amount) {
+
+    //     Account account = findAccount(accountNumber);
+
+    //     if (findAccount(accountNumber) != null) {
+    //         ((LoanAccount) account).withdraw(amount);
+    //         ((LoanAccount) account).log(amount);
+    //     }
+    // }
+
+
+
+
+
+
+
+
+
+   
 }

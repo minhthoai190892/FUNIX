@@ -1,9 +1,10 @@
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class Account {
+public abstract class Account {
     private String accountNumber;
     private double balance;
+    private String accountName;
 
     /**
      * Contructor
@@ -11,9 +12,10 @@ public class Account {
      * @param accountNumber
      * @param balance
      */
-    public Account(String accountNumber, double balance) {
+    public Account(String accountNumber, double balance, String accountName) {
         this.accountNumber = accountNumber;
         this.balance = balance;
+        this.accountName = accountName;
     }
 
     public String getAccountNumber() {
@@ -49,12 +51,25 @@ public class Account {
      * Hàm hiển thị thông tin của tài khoản
      */
     public void display() {
-        //tạo mới phương thức Locale để format hiển thị
+        // tạo mới phương thức Locale để format hiển thị
         Locale localeEN = new Locale("en", "EN");
-        //format hiển thị theo kểu "english"
+        // format hiển thị theo kểu "english"
         NumberFormat en = NumberFormat.getInstance(localeEN);
         String stringBalance = en.format(balance);
         System.out
                 .println(accountNumber + " | " + "\t" + stringBalance + "d");
     }
+
+    public void log(double amount) {
+    }
+
+    public String getAccountName() {
+        return accountName;
+    }
+
+    public void setAccountName(String accountName) {
+        this.accountName = accountName;
+    }
+
+    public abstract boolean withdraw(double amount) ;
 }

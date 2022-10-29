@@ -18,7 +18,7 @@ public class DigitalCustomer extends Customer {
         this.accounts = accounts;
     }
 
-    private Account findAccount(String newAccount) {
+    public Account findAccount(String newAccount) {
         // duyệt qua mảng "accounts"
         for (int i = 0; i < this.accounts.size(); i++) {
             Account checkAccount = this.accounts.get(i);
@@ -74,6 +74,16 @@ public class DigitalCustomer extends Customer {
             ((LoanAccount) account).withdraw(amount);
             ((LoanAccount) account).log(amount);
         }
+    }
+
+    public void displayAccount() {
+        System.out.println(getCustomerId() + " " + getName());
+        for (int i = 0; i < accounts.size(); i++) {
+            System.out.println(accounts.get(i).getAccountNumber() + " " + accounts.get(i).getBalance());
+        }
+    }
+    public void testText() {
+        System.out.println("Test");
     }
 
 }
