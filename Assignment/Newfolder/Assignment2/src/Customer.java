@@ -4,7 +4,7 @@ import java.util.Locale;
 
 public class Customer extends User {
     ArrayList<Account> accounts;
-   
+
     /**
      * Contructor
      * 
@@ -37,9 +37,7 @@ public class Customer extends User {
         if (findAccount(newAccount) == null) {
             // nếu "newAccount" chưa có ta sử dụng phương thức "add" để tạo mới một
             // "Account"
-            
             accounts.add(new Account(newAccount, balance));
-           
             return true;
         }
         return false;
@@ -98,16 +96,16 @@ public class Customer extends User {
      */
     public void displayInformation() {
         String checkIsPremium = isPremium();
-        // định dạng hiển thị
+        //định dạng hiển thị
         Locale localeEN = new Locale("en", "EN");
         NumberFormat en = NumberFormat.getInstance(localeEN);
 
         String stringBalance = en.format(getBalance());
-        // hiển thị thông tin khách hàng
+        //hiển thị thông tin khách hàng
         System.out.printf("%-15s|%15s|%-15s|%sd \n", getCustomerId(), getName(), checkIsPremium, stringBalance);
-        // hiển thị tất cả tài khoản khách hàng đó có
+        //hiển thị tất cả tài khoản khách hàng đó có
         for (int i = 0; i < accounts.size(); i++) {
-            System.out.printf("%-5s  %-40s %sd  \n", i + 1, accounts.get(i).getAccountNumber(),
+            System.out.printf("%-5s  %-40s %sd \n", i + 1, accounts.get(i).getAccountNumber(),
                     en.format(accounts.get(i).getBalance()));
         }
     }

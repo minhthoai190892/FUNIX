@@ -7,5 +7,6 @@ public class App {
         animal.sound();
         // Downcasting
         ((Dog) animal).play();
+        
     }
 }

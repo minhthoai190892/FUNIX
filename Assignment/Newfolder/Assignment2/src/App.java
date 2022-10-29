@@ -11,7 +11,6 @@ public class App {
         bank.addCustomer("THOAI1", "00112345677");
         bank.addCustomer("THANH", "001123456788");
         bank.addCustomer("DOAN", "001123456786");
-        // bank.addAccount("001123456789", "123456", 5000000);
         printMenu();
         boolean flag = false;
         while (!flag) {
@@ -29,24 +28,24 @@ public class App {
 
             switch (choice) {
                 case 1:
-                   
+                    System.out.println("Chuc nang so 1");
                     addCustomer();
                     break;
                 case 2:
-                  
+                    System.out.println("Chuc nang so 2");
                     addAccount();
                     break;
                 case 3:
-                  
+                    System.out.println("Chuc nang so 3");
                     bank.display();
                     break;
                 case 4:
-                   
+                    System.out.println("Chuc nang so 4");
                     searchForCCCD();
 
                     break;
                 case 5:
-                  
+                    System.out.println("Chuc nang so 5");
                     searchForName();
                     break;
                 case 6:
@@ -77,9 +76,8 @@ public class App {
     }
 
     private static void addAccount() {
-    LoanAccount loanAccount;
-
         boolean checkAccount = false;
+
         System.out.print("Nhap CCCD khach hang: ");
         String customerId = "";
 

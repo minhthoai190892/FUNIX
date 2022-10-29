@@ -29,6 +29,6 @@ public class App {
         // }
 
 
-        bank.listCustomers("Adelaide", true);
+        bank.listCustomers("Adelaide", false);
     }
 }

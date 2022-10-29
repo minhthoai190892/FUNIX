@@ -38,7 +38,7 @@ public class Bank {
      */
     public boolean addCustomer(String customerName, String customerId) {
         // kiểm tra khách hàng đã tồn tại chưa
-        if (getCustomerById (customerId) == null) {
+        if (findCustomer(customerId) == null) {
             // nếu chưa ta gọi phương thức "add" và tạo mới "Customer"
             this.customers.add(new Customer(customerName, customerId));
             return true;
@@ -55,11 +55,10 @@ public class Bank {
      * @return true/false
      */
     public boolean addAccount(String customerId, String accountNumber, double balance) {
-        Customer customer = getCustomerById (customerId);
+        Customer customer = findCustomer(customerId);
         // kiểm tra xem "Customer" có tồn tại không
         if (customer != null) {// => Customer
             // gọi hàm "addAccount" của "Account" để tạo tài khoản
-            // return customer.addAccount(accountNumber, balance);
             return customer.addAccount(accountNumber, balance);
         }
         return false;
@@ -71,7 +70,7 @@ public class Bank {
      * @param customerId
      * @return Customer
      */
-    private Customer getCustomerById (String customerId) {
+    private Customer findCustomer(String customerId) {
         for (int i = 0; i < this.customers.size(); i++) {
             Customer checkCustomer = this.customers.get(i);
             if (checkCustomer.getCustomerId().equals(customerId)) {
@@ -101,7 +100,7 @@ public class Bank {
      * @return Customer
      */
     public Customer searchCustomerId(String customerId) {
-        return getCustomerById (customerId);
+        return findCustomer(customerId);
     }
 /**
  * Hàm tìm kiếm khách hàng bằng "customerName"
