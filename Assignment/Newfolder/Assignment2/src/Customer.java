@@ -121,8 +121,9 @@ public abstract class Customer extends User {
 
         }
     }
+     public abstract void withdraw(String accountNumber, double amount);
 
-    public abstract void withdrawSavingsAccount(String accountNumber, double amount);
-    public abstract void withdrawLoanAccount(String accountNumber, double amount);
+    // public abstract void withdrawSavingsAccount(String accountNumber, double amount);
+    // public abstract void withdrawLoanAccount(String accountNumber, double amount);
 
 }

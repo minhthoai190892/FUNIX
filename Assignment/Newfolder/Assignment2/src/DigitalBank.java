@@ -26,18 +26,42 @@ public class DigitalBank extends Bank {
     }
 
    
-    public void withdrawSavingsAccount(String customerId, String accountNumber, double amount) {
+public void withdraw(String customerId, String accountNumber, double amount) {
         Customer customer = getCustomerById(customerId);
         if (customer!=null) {
-          customer.withdrawSavingsAccount(accountNumber, amount);
+          customer.withdraw(accountNumber, amount);
         }
     }
-    public void withdrawLoanAccount(String customerId, String accountNumber, double amount) {
-        Customer customer = getCustomerById(customerId);
-        if (customer!=null) {
-          customer.withdrawLoanAccount(accountNumber, amount);
-        }
-    }
+
+
+
+
+
+
+    // public void withdrawSavingsAccount(String customerId, String accountNumber, double amount) {
+    //     Customer customer = getCustomerById(customerId);
+    //     if (customer!=null) {
+    //       customer.withdrawSavingsAccount(accountNumber, amount);
+    //     }
+    // }
+    // public void withdrawLoanAccount(String customerId, String accountNumber, double amount) {
+    //     Customer customer = getCustomerById(customerId);
+    //     if (customer!=null) {
+    //       customer.withdrawLoanAccount(accountNumber, amount);
+    //     }
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
     @Override
     public boolean addSavingsAccount(String customerId, String accountNumber, double balance, String accountName) {
         // TODO Auto-generated method stub

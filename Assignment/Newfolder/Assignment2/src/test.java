@@ -48,8 +48,9 @@ public class test {
         // 5000000
         // 1000000
         digitalBank.addCustomer(customerName, customerId);
-        digitalBank.addLoanAccount(customerId, accountNumber, balance, accountName);
-        digitalBank.withdrawLoanAccount(customerId, accountNumber, amount   );
+        // digitalBank.addLoanAccount(customerId, accountNumber, balance, accountName);
+        digitalBank.addSavingsAccount(customerId, accountNumber, balance, accountName);
+        digitalBank.withdraw(customerId, accountNumber, amount   );
 
         digitalBank.display();
     }

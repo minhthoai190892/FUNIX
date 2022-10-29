@@ -17,7 +17,8 @@ public class DigitalCustomer extends Customer {
         return super.addSavingsAccount(accountNumber, balance,accountName);
     }
 
-    public void withdrawSavingsAccount(String accountNumber, double amount) {
+
+    public void withdraw(String accountNumber, double amount) {
 
         Account account = findAccount(accountNumber);
 
@@ -27,16 +28,30 @@ public class DigitalCustomer extends Customer {
         }
     }
 
+
+
+
+
+    // public void withdrawSavingsAccount(String accountNumber, double amount) {
+
+    //     Account account = findAccount(accountNumber);
+
+    //     if (findAccount(accountNumber) != null) {
+    //      account.withdraw(amount);
+    //         account.log(amount);
+    //     }
+    // }
+
     
-    public void withdrawLoanAccount(String accountNumber, double amount) {
+    // public void withdrawLoanAccount(String accountNumber, double amount) {
 
-        Account account = findAccount(accountNumber);
+    //     Account account = findAccount(accountNumber);
 
-        if (findAccount(accountNumber) != null) {
-            ((LoanAccount) account).withdraw(amount);
-            account.log(amount);
-        }
-    }
+    //     if (findAccount(accountNumber) != null) {
+    //         account.withdraw(amount);
+    //         account.log(amount);
+    //     }
+    // }
 
     @Override
     public Account findAccount(String accountNumber) {
