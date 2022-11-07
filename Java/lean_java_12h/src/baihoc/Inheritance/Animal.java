@@ -7,7 +7,7 @@ public class Animal {
     private int size;
     private int weight;
 
-    public Animal(String name, int brain, int body, int size, int weight) {
+     public Animal(String name, int brain, int body, int size, int weight) {
         this.name = name;
         this.brain = brain;
         this.body = body;
