@@ -13,7 +13,7 @@ public class LinkedListDemo {
         // // linkedList.deleteFromHead();
         // System.out.println(linkedList);
         // // System.out.println(linkedList.length());
-        // System.out.println("Found: "+linkedList.find(12));
+        // System.out.println("Found: " + linkedList.find(12));
 
         DoublyEndedLists doublyEndedLists = new DoublyEndedLists();
         doublyEndedLists.insertAtTail(5);
