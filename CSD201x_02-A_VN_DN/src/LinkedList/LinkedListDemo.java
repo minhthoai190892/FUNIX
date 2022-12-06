@@ -16,14 +16,14 @@ public class LinkedListDemo {
         // System.out.println("Found: "+linkedList.find(12));
 
         DoublyEndedLists doublyEndedLists = new DoublyEndedLists();
-        doublyEndedLists.insertAtTail(5);
-        doublyEndedLists.insertAtTail(10);
-        doublyEndedLists.insertAtTail(2);
-        doublyEndedLists.insertAtTail(12);
-        doublyEndedLists.insertAtTail(19);
-        doublyEndedLists.insertAtTail(20);
+        doublyEndedLists.insertAtHead(5);
+        doublyEndedLists.insertAtHead(10);
+        doublyEndedLists.insertAtHead(2);
+        doublyEndedLists.insertAtHead(12);
+        doublyEndedLists.insertAtHead(19);
+        doublyEndedLists.insertAtHead(20);
 
         System.out.println(doublyEndedLists);
-
+        System.out.println("flutteradvent-pageview".toLowerCase());
     }
 }
