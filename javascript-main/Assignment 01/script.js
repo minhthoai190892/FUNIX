@@ -1,6 +1,6 @@
 "use strict";
 // TODO: khai bao bien
-const submitBtn = document.getElementById("submit-btn");
+const submitBtn = document.getElementById('submit-btn');
 
 const idInput = document.getElementById("input-id");
 const nameInput = document.getElementById("input-name");
@@ -270,7 +270,6 @@ submitBtn.addEventListener("click", function () {
     date: new Date(),
     bmi: "?",
   };
-
   const validate = validateDate(data);
 
   if (validate) {
@@ -283,3 +282,4 @@ submitBtn.addEventListener("click", function () {
   }
   console.log(data);
 });
+
