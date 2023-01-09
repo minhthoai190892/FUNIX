@@ -11,6 +11,9 @@ public class LinkedList {
         this.head = newNode;
         
     }
+    
+ 
+
     @Override
     public String toString() {
         String result = "{";

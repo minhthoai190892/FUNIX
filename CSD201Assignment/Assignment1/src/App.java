@@ -14,17 +14,17 @@ public class App {
         // int[] array = { 9, 3, 5, 6, 1, 2, 4 };
         // linearSearch(array, 5);
 
-        System.out.print("Enter n: ");
-        int n = scanner.nextInt();
-        scanner.nextLine();
-        int[] array = new int[n];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = scanner.nextInt();
-            writeFile(INPUT, array[i],n);
-        }
-        float[] arrayFloat = readFile(INPUT,n) ;
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i]+" ");
+        // System.out.print("Enter n: ");
+        // int n = scanner.nextInt();
+        // scanner.nextLine();
+        // int[] array = new int[n];
+        // for (int i = 0; i < array.length; i++) {
+        //     array[i] = scanner.nextInt();
+        //     writeFile(INPUT, array[i],n);
+        // }
+        float[] arrayFloat = readFile(INPUT,3) ;
+        for (int i = 0; i < arrayFloat.length; i++) {
+            System.out.print(arrayFloat[i]+" ");
         }
     }
 
@@ -66,6 +66,7 @@ public class App {
                     break;
                 }
                 array[i] = Integer.parseInt(line);
+                i++;
             }
             br.close();
             fr.close();

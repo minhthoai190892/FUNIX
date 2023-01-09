@@ -1,6 +1,6 @@
 package LinkedLists;
 
-import java.util.List;
+
 
 public class LinkedListDemo {
     public static void main(String[] args) {
@@ -12,8 +12,8 @@ public class LinkedListDemo {
         linkedList.insertAtHead(19);
         linkedList.insertAtHead(20);
         linkedList.insertAtHead(21);
-        // System.out.println("Length: "+linkedList.length());
-        // System.out.println(linkedList);
+        System.out.println("Length: "+linkedList.length());
+        System.out.println(linkedList);
         // linkedList.deleteFromHead();
         System.out.println("Length: "+linkedList.length());
         System.out.println(linkedList);
