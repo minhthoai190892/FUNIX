@@ -1,37 +1,39 @@
-package LinkedLists;
+package HocLai;
 
 public class Node {
-    // giá trị kiểu int
     private int data;
-    // nextNode trỏ tới node tiếp theo
     private Node nextNode;
 
     
-    // hàm khởi tạo
+    public Node(int data, Node nextNode) {
+        this.data = data;
+        this.nextNode = nextNode;
+    }
     public Node(int data) {
         this.data = data;
         this.nextNode = null;
     }
-
     public int getData() {
         return data;
     }
-
     public void setData(int data) {
         this.data = data;
     }
-
     public Node getNextNode() {
         return nextNode;
     }
-
     public void setNextNode(Node nextNode) {
         this.nextNode = nextNode;
     }
-
+    // @Override
+    // public String toString() {
+    //     return data + " ";
+    // }
     @Override
     public String toString() {
-        return "data=" + this.data ;
+        return "Node [data=" + data + ", nextNode=" + nextNode + "]";
     }
-
+    
+    
+    
 }

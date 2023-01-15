@@ -169,50 +169,51 @@ public class Lab2 {
         // }
         // System.out.println("Binary Search");
 
-        // int lengthArray = array.length;
-        // System.out.println(lab2.binarySearch(array, 0, lengthArray, 4));
-        // System.out.println("========================");
-        Scanner scanner = new Scanner(System.in);
-        int n, choice;
-        int[] array = { 2, 3, 4, 1, 76, 2, 3, 4 };
-        int lengthArray = array.length;
-        Lab2 lab2 = new Lab2();
-        while (true) {
-            System.out.println("\n Choose your option:");
-            System.out.println("  1. Display data");
-            System.out.println("  2. Selection sort");
-            System.out.println("  3. Insertion sort");
-            System.out.println("  4. Linear Search");
-            System.out.println("  5. Binary Search");
-            System.out.println("  0. Exit\n");
-            System.out.print("  Your selection (0 -> 5): ");
-            choice = scanner.nextInt();
-            if (choice == 0) {
-                System.out.println(" Good bye, have a nice day!");
-                break;
+        try (// int lengthArray = array.length;
+                // System.out.println(lab2.binarySearch(array, 0, lengthArray, 4));
+                // System.out.println("========================");
+        Scanner scanner = new Scanner(System.in)) {
+            int choice;
+            int[] array = { 2, 3, 4, 1, 76, 2, 3, 4 };
+            int lengthArray = array.length;
+            Lab2 lab2 = new Lab2();
+            while (true) {
+                System.out.println("\n Choose your option:");
+                System.out.println("  1. Display data");
+                System.out.println("  2. Selection sort");
+                System.out.println("  3. Insertion sort");
+                System.out.println("  4. Linear Search");
+                System.out.println("  5. Binary Search");
+                System.out.println("  0. Exit\n");
+                System.out.print("  Your selection (0 -> 5): ");
+                choice = scanner.nextInt();
+                if (choice == 0) {
+                    System.out.println(" Good bye, have a nice day!");
+                    break;
+                }
+                switch (choice) {
+                    case 1:
+                        lab2.display(array);
+                        break;
+                    case 2:
+                        lab2.selectionSort(array);
+                        break;
+                    case 3:
+                       lab2.insertSort(array);
+                        break;
+                    case 4:
+                        System.out.println(lab2.search(array, 76) + " ");
+                        break;
+                        case 5:
+                        System.out.println(lab2.binarySearch(array, 0,lengthArray, 76) + " ");
+                        break;
+                    default:
+                        System.out.println("**Invalid choice. Try again.**");
+                }
+
+
+
             }
-            switch (choice) {
-                case 1:
-                    lab2.display(array);
-                    break;
-                case 2:
-                    lab2.selectionSort(array);
-                    break;
-                case 3:
-                   lab2.insertSort(array);
-                    break;
-                case 4:
-                    System.out.println(lab2.search(array, 76) + " ");
-                    break;
-                    case 5:
-                    System.out.println(lab2.binarySearch(array, 0,lengthArray, 76) + " ");
-                    break;
-                default:
-                    System.out.println("**Invalid choice. Try again.**");
-            }
-
-
-
         }
 
     }

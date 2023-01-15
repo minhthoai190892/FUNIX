@@ -1,79 +1,106 @@
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.util.Scanner;
 
 public class App {
     private static final String INPUT = "INPUT.TXT";
+
     private static Scanner scanner = new Scanner(System.in);
 
+    /*
+     * So Sánh
+     * - Dữ liệu sắp xếp theo thứ tự ngược lại  Selection sort nhanh hơn
+     * - Dữ liệu đã được sắp xếp Selection sort nhanh hơn
+     * - Dữ liệu có xáo trộn ngẫu nhiên. Selection sort nhanh hơn
+     *  
+     */
     public static void main(String[] args) throws Exception {
-
-        // D:\\Funix\\CSD201Assignment\\test.txt
+        Assignment assignment = new Assignment();
         // int[] array = { 9, 3, 5, 6, 1, 2, 4 };
-        // linearSearch(array, 5);
 
-        // System.out.print("Enter n: ");
-        // int n = scanner.nextInt();
-        // scanner.nextLine();
-        // int[] array = new int[n];
-        // for (int i = 0; i < array.length; i++) {
-        //     array[i] = scanner.nextInt();
-        //     writeFile(INPUT, array[i],n);
-        // }
-        float[] arrayFloat = readFile(INPUT,3) ;
-        for (int i = 0; i < arrayFloat.length; i++) {
-            System.out.print(arrayFloat[i]+" ");
-        }
-    }
+        int n = 0;
 
-    public static void linearSearch(int[] array, int value) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] > value) {
-                System.out.print(i + " ");
+        Option option = new Option();
+        while (true) {
+
+            option.option();
+            System.out.print("Choice: ");
+            int choice = scanner.nextInt();
+            if (choice == 0) {
+
+                break;
+
             }
-        }
+            switch (choice) {
 
-    }
-
-    public static void writeFile(String fileName, int index,int length) {
-        // append = true: không ghe đè file
-        // append = false: ghe đè file
-        try {
-            FileWriter fw = new FileWriter(fileName, true);
-            BufferedWriter bw = new BufferedWriter(fw);
-            bw.write(String.valueOf(index));
-            bw.newLine();
-            bw.close();
-            fw.close();
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-    }
-
-    public static float[] readFile(String fileName,int length) {
-        float[] array = new float[length];
-        try {
-            FileReader fr = new FileReader(fileName);
-            BufferedReader br = new BufferedReader(fr);
-            String line = "";
-            int i = 0;
-
-            while (true) {
-                line = br.readLine();
-                if (line == null) {
+                case 1:
+                    System.out.print("Enter n: ");
+                    n = scanner.nextInt();
+                    scanner.nextLine();
+                    int[] array = new int[n];
+                    for (int i = 0; i < array.length; i++) {
+                        array[i] = scanner.nextInt();
+                        // writeFile(INPUT, array[i], n);
+                        assignment.writeFile(INPUT, array[i], n);
+                    }
                     break;
-                }
-                array[i] = Integer.parseInt(line);
-                i++;
-            }
-            br.close();
-            fr.close();
+                case 2:
+                    float[] arrayFloat = assignment.readFile(INPUT, n);
+                    for (int i = 0; i < arrayFloat.length; i++) {
+                        System.out.print(arrayFloat[i] + " ");
+                    }
+                    System.out.println();
 
-        } catch (Exception e) {
-            e.printStackTrace();
+                    break;
+                case 3:
+                    System.out.println("Bubble sort");
+                    float[] bubbleSort = assignment.readFile(INPUT, n);
+                    assignment.bubbleSort(bubbleSort);
+                    System.out.println();
+
+                    break;
+                case 4:
+                    System.out.println("Selection sort");
+                    float[] selectionSort = assignment.readFile(INPUT, n);
+                    assignment.selectionSort(selectionSort);
+                    System.out.println();
+                    break;
+                case 5:
+                    System.out.println("Insertion sort  ");
+                    float[] insertionSort = assignment.readFile(INPUT, n);
+                    assignment.insertionSort(insertionSort);
+                    System.out.println();
+                    break;
+                case 6:
+                    System.out.println("Linear Search  ");
+                    float[] searchArray = assignment.readFile(INPUT, n);
+                    System.out.print("Enter value: ");
+                    int value = scanner.nextInt();
+                    assignment.linearSearch(searchArray, value);
+                    System.out.println();
+                    break;
+                case 7:
+                    System.out.println("Binary Search ");
+
+                    float[] binarySearchArr = assignment.readFile(INPUT, n);
+                    System.out.print("Enter value: ");
+                    int biValue = scanner.nextInt();
+                    System.out.println("Nhập khoảng tìm kiếm:");
+                    System.out.print("Nhập left: ");
+                    int left = scanner.nextInt();
+                    System.out.print("Nhập right: ");
+                    int right = scanner.nextInt();
+                    int x = assignment.binarySearch(binarySearchArr, left, right, biValue);
+                    if (x != -1) {
+                        System.out.println("Indext of fist element: " + x);
+                    } else {
+                        System.out.println("Not found");
+                    }
+                    System.out.println();
+                    break;
+
+                default:
+                    break;
+            }
+
         }
-        return array;
     }
 }
