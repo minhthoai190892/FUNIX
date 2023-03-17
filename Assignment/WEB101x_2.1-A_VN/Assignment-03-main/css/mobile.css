@@ -1,0 +1,78 @@
+@media (max-width: 500px) {
+  .body{
+  
+    width: 500px;
+  }
+  .banner-info {
+    height: 220px;
+  }
+  #banner {
+    height: 220px;
+  }
+  .nav-barcontainer {
+    justify-content: end;
+    /* background-color: re; */
+    flex-direction: column;
+    text-align: start;
+    border: 1px solid red;
+
+  }
+  .tesst{
+    text-align: left !important;
+  }
+ .nav-barcontainer a {
+    border: none;
+    justify-content: start;
+    text-align: justify;
+    padding: 0;
+    padding-right: 350px;
+  }
+  .nav-barcontainer i {
+    left: -10px;
+    
+    position: absolute;
+  }
+  .nav-bar-image {
+    display: none;
+  }
+  #banner {
+    height: 200px;
+    width: 500px;
+  }
+  .container-about {
+    display: flex;
+    flex-direction: column;
+  }
+  #personal-info {
+    margin-top: 200px;
+    padding-left: 70px;
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .gird-col-2 {
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .certificate-flex {
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+  }
+  .gird-3-col {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .div-item {
+    width: 400px;
+  }
+  .certificate-text, .certificate-text3{
+    margin-top: 50px;
+  }
+  .certificate-border-left{
+    border: none;
+  }
+}

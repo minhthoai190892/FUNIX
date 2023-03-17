@@ -3,7 +3,9 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 
+
 public class Assignment {
+    private static final String INPUT = "INPUT.TXT";
     private static final String INPUT1 = "INPUT1.TXT";
     private static final String INPUT2 = "INPUT2.TXT";
     private static final String INPUT3 = "INPUT3.TXT";
@@ -66,6 +68,32 @@ public class Assignment {
         }
         return array;
     }
+    // public float[] readFile() {
+    // File file = new File(INPUT);
+    // long leng = file.length();
+    // int i = 0;
+    // float[] array = new float[(int) leng];
+    // try {
+    // FileReader fr = new FileReader(INPUT);
+    // BufferedReader br = new BufferedReader(fr);
+
+    // String line = "";
+    // while (true) {
+    // line = br.readLine();
+    // if (line == null) {
+    // break;
+    // }
+    // array[i] = Integer.parseInt(line);
+    // i++;
+    // }
+    // br.close();
+    // fr.close();
+    // } catch (Exception e) {
+    // // TODO: handle exception
+    // }
+    // return array;
+
+    // }
 
     /**
      * chức năng tìm bubble sort

@@ -7,10 +7,10 @@ public class App {
 
     /*
      * So Sánh
-     * - Dữ liệu sắp xếp theo thứ tự ngược lại  Selection sort nhanh hơn
+     * - Dữ liệu sắp xếp theo thứ tự ngược lại Selection sort nhanh hơn
      * - Dữ liệu đã được sắp xếp Selection sort nhanh hơn
      * - Dữ liệu có xáo trộn ngẫu nhiên. Selection sort nhanh hơn
-     *  
+     * 
      */
     public static void main(String[] args) throws Exception {
         Assignment assignment = new Assignment();
@@ -44,9 +44,11 @@ public class App {
                     break;
                 case 2:
                     float[] arrayFloat = assignment.readFile(INPUT, n);
+                    System.out.println(arrayFloat.length);
                     for (int i = 0; i < arrayFloat.length; i++) {
                         System.out.print(arrayFloat[i] + " ");
                     }
+
                     System.out.println();
 
                     break;
@@ -64,13 +66,13 @@ public class App {
                     System.out.println();
                     break;
                 case 5:
-                    System.out.println("Insertion sort  ");
+                    System.out.println("Insertion sort ");
                     float[] insertionSort = assignment.readFile(INPUT, n);
                     assignment.insertionSort(insertionSort);
                     System.out.println();
                     break;
                 case 6:
-                    System.out.println("Linear Search  ");
+                    System.out.println("Linear Search ");
                     float[] searchArray = assignment.readFile(INPUT, n);
                     System.out.print("Enter value: ");
                     int value = scanner.nextInt();
@@ -98,6 +100,7 @@ public class App {
                     break;
 
                 default:
+                    System.out.println("Choice from 0 to 7");
                     break;
             }
 

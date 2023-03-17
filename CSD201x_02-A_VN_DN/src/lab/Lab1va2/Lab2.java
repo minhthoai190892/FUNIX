@@ -118,7 +118,7 @@ public class Lab2 {
                 j--;
             }
             b[j + 1] = current;
-             display(b);
+            display(b);
         }
     }
 
@@ -170,9 +170,9 @@ public class Lab2 {
         // System.out.println("Binary Search");
 
         try (// int lengthArray = array.length;
-                // System.out.println(lab2.binarySearch(array, 0, lengthArray, 4));
-                // System.out.println("========================");
-        Scanner scanner = new Scanner(System.in)) {
+             // System.out.println(lab2.binarySearch(array, 0, lengthArray, 4));
+             // System.out.println("========================");
+                Scanner scanner = new Scanner(System.in)) {
             int choice;
             int[] array = { 2, 3, 4, 1, 76, 2, 3, 4 };
             int lengthArray = array.length;
@@ -199,19 +199,17 @@ public class Lab2 {
                         lab2.selectionSort(array);
                         break;
                     case 3:
-                       lab2.insertSort(array);
+                        lab2.insertSort(array);
                         break;
                     case 4:
                         System.out.println(lab2.search(array, 76) + " ");
                         break;
-                        case 5:
-                        System.out.println(lab2.binarySearch(array, 0,lengthArray, 76) + " ");
+                    case 5:
+                        System.out.println(lab2.binarySearch(array, 0, lengthArray, 76) + " ");
                         break;
                     default:
                         System.out.println("**Invalid choice. Try again.**");
                 }
-
-
 
             }
         }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Primary/demo (1).iml" filepath="$PROJECT_DIR$/Primary/demo (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Qualifiers/demo (2).iml" filepath="$PROJECT_DIR$/Qualifiers/demo (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/section-2-new-springboot-3-inversion-of-control-and-dependency-injection.iml" filepath="$PROJECT_DIR$/.idea/section-2-new-springboot-3-inversion-of-control-and-dependency-injection.iml" />
+    </modules>
+  </component>
+</project>

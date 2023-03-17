@@ -1,6 +1,5 @@
 package StackAndQueue;
 
-import java.util.ArrayList;
 import java.util.Objects;
 
 public class MyLinkedListStack2 implements IStackAndQueue {
@@ -58,24 +57,24 @@ public class MyLinkedListStack2 implements IStackAndQueue {
         }
         Node temp = topNode;
         // in linked List
-        // while (Objects.nonNull(temp)) {
-        // System.out.print(temp.value+" ");
-        // temp = temp.next;
-        // }
-
-        ArrayList<Integer> arrayList = new ArrayList<>();
         while (Objects.nonNull(temp)) {
-            arrayList.add(temp.getValue());
+            System.out.print(temp.getValue() + " ");
             temp = temp.getNext();
         }
+
+        // ArrayList<Integer> arrayList = new ArrayList<>();
+        // while (Objects.nonNull(temp)) {
+        // arrayList.add(temp.getValue());
+        // temp = temp.getNext();
+        // }
         // in xuôi danh sách
         // for (int i = 0; i < arrayList.size(); i++) {
         // System.out.print(arrayList.get(i) + " ");
         // }
-        // in ngược danh sách
-        for (int i = arrayList.size() - 1; i >= 0; i--) {
-            System.out.print(arrayList.get(i) + " ");
-        }
-        System.out.println();
+        // // in ngược danh sách
+        // for (int i = arrayList.size() - 1; i >= 0; i--) {
+        // System.out.print(arrayList.get(i) + " ");
+        // }
+        // System.out.println();
     }
 }

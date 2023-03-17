@@ -1,0 +1,5 @@
+package DSLK;
+
+interface  iLinkedList {
+    
+}

@@ -18,7 +18,7 @@ public class Node {
 
     @Override
     public String toString() {
-        return "Node [info=" + info + ", next=" + next + "]";
+        return info + "";
     }
 
     public int getInfo() {
@@ -37,6 +37,4 @@ public class Node {
         this.next = next;
     }
 
-
-    
 }

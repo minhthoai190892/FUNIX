@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5b0df025-0308-432d-bb81-e5cc169c05ee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/maven_wrapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/spring-boot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/SpringBootApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/test/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201Assignment/Assignment1.rar" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201Assignment/Assignment1.rar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201Assignment/Assignment1/bin/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201Assignment/Assignment1/bin/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201Assignment/Assignment1/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201Assignment/Assignment1/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201Assignment/Assignment1/src/Assignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201Assignment/Assignment1/src/Assignment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201Assignment/Assignment2/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201Assignment/Assignment2/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/bin/HocLai/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/bin/HocLai/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/bin/StackAndQueue/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/bin/StackAndQueue/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/bin/StackAndQueue/MyLinkedListStack2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/bin/StackAndQueue/MyLinkedListStack2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/bin/StackAndQueue/TestStackAndQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/bin/StackAndQueue/TestStackAndQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/bin/lab/Lab1va2/Lab2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/bin/lab/Lab1va2/Lab2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/bin/lab/Lab3/MyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/bin/lab/Lab3/MyList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/bin/lab/Lab3/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/bin/lab/Lab3/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/bin/lab/Lab3/lab3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/bin/lab/Lab3/lab3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/src/HocLai/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/src/HocLai/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/src/StackAndQueue/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/src/StackAndQueue/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/src/StackAndQueue/MyLinkedListStack2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/src/StackAndQueue/MyLinkedListStack2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/src/StackAndQueue/TestStackAndQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/src/StackAndQueue/TestStackAndQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/src/lab/Lab1va2/Lab2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/src/lab/Lab1va2/Lab2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/src/lab/Lab3/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/src/lab/Lab3/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/src/lab/Lab3/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/src/lab/Lab3/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/src/lab/Lab3/lab3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSD201x_02-A_VN_DN/src/lab/Lab3/lab3.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2MzRDtXObXr7wSg4zSoXR3CMPir" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Funix/PRJ321/demo"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.demo" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b0df025-0308-432d-bb81-e5cc169c05ee" name="Changes" comment="" />
+      <created>1678768310051</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678768310051</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

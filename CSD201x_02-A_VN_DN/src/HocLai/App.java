@@ -13,7 +13,7 @@ public class App {
         DoublyEndedList dList = new DoublyEndedList();
 
         // dList.insertHead(20);
-        // dList.insertHead(1000);
+        dList.insertHead(1000);
         dList.insertTail(8);
         dList.insertTail(400);
         dList.insertTail(40);

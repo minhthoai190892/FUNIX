@@ -1,6 +1,6 @@
 package lab.Lab3;
 
-import java.util.List;
+
 import java.util.Objects;
 
 public class MyList {
@@ -59,15 +59,18 @@ public class MyList {
         }
     }
 
-    public static void miniMaxSum(List<Integer> arr) {
-        // Write your code here
-        long sum = 0;
-        // arr.sort(null);
-        for (Integer in : arr) {
-            sum += in;
-         
+    public int search(int value) {
+        int count = 0;
+        Node currentNode = this.head;
+        while (Objects.nonNull(currentNode)) {
+            if (currentNode.getInfo() > value) {
+                // System.out.println(count + " " + currentNode);
+                return count;
+            }
+            count++;
+            currentNode = currentNode.getNext();
         }
-        System.out.println((sum - arr.get(arr.size() - 1)) + " " + (sum - arr.get(0)));
+        return -1;
     }
 
 }
