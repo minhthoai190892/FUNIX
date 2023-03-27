@@ -9,12 +9,22 @@ import java.util.List;
  */
 public interface StudentDAO {
     /**
-     *
      * @param student
      */
-    void  save(Student student);
+    void save(Student student);
+
     Student findById(Integer id);
+
     List<Student> findAll();
+
     List<Student> findByFirstName(String name);
+
+
     List<Student> findByEmail(String email);
+
+    void update(Student student);
+    int updateAllStudent();
+    void delete(Integer id);
+    int deleteAll();
+
 }

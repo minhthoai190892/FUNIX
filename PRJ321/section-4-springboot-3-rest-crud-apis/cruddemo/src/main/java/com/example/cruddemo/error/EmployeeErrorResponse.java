@@ -1,14 +1,14 @@
-package com.example.demo.error;
+package com.example.cruddemo.error;
 
-public class StudentErrorReponse {
+public class EmployeeErrorResponse {
     private int status;
     private String message;
     private  long timeStamp;
 
-    public StudentErrorReponse() {
+    public EmployeeErrorResponse() {
     }
 
-    public StudentErrorReponse(int status, String message, long timeStamp) {
+    public EmployeeErrorResponse(int status, String message, long timeStamp) {
         this.status = status;
         this.message = message;
         this.timeStamp = timeStamp;
@@ -36,5 +36,14 @@ public class StudentErrorReponse {
 
     public void setTimeStamp(long timeStamp) {
         this.timeStamp = timeStamp;
+    }
+
+    @Override
+    public String toString() {
+        return "EmployeeErrorResponse{" +
+                "status=" + status +
+                ", message='" + message + '\'' +
+                ", timeStamp=" + timeStamp +
+                '}';
     }
 }

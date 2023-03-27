@@ -3,9 +3,8 @@ package com.example.cruddemo.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "student2")
-public class Student {
-    //define fields
+@Table(name = "employee")
+public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -16,18 +15,17 @@ public class Student {
     private String lastName;
     @Column(name = "email")
     private String email;
-    //constructor
 
-    public Student( String firstName, String lastName, String email) {
+    public Employee() {
+    }
 
+    public Employee(int id, String firstName, String lastName, String email) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
     }
 
-    public Student() {
-    }
-//setter getter
 
     public int getId() {
         return id;
@@ -61,11 +59,9 @@ public class Student {
         this.email = email;
     }
 
-    //toString
-
     @Override
     public String toString() {
-        return "Student{" +
+        return "Employee{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
