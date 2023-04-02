@@ -1,5 +1,11 @@
 # Essential Stuff
 
+## Link tutorial
+
+``` html
+<link rel="tutorial" href="https://www.youtube.com/watch?v=GohJZd9Tu2Y">
+```
+
 ## Html import links
 
 Google font
