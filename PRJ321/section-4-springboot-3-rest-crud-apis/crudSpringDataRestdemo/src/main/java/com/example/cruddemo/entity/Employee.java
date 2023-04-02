@@ -1,4 +1,4 @@
-package com.example.demosecurity.entity;
+package com.example.cruddemo.entity;
 
 import jakarta.persistence.*;
 
@@ -19,11 +19,13 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(String firstName, String lastName, String email) {
+    public Employee(int id, String firstName, String lastName, String email) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
     }
+
 
     public int getId() {
         return id;
